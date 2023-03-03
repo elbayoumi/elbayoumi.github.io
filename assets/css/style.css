@@ -8,6 +8,7 @@
   --secondary-txt-color:#0563bb;
   --hover-txt-color:#067ded;
   --back-to-top-with-height:2.5 rem;
+  --back-to-top-hover:#0678e3
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -57,7 +58,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: var(--back-to-top-hover);
   color: #fff;
 }
 
@@ -71,7 +72,7 @@ h6 {
 }
 .download:hover{
   color: #fff ;
-  background: #0678e3;
+  background: var(--back-to-top-hover);
 
 }
 /*--------------------------------------------------------------
@@ -93,7 +94,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid var(--secondary-txt-color);
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
