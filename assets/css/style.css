@@ -199,7 +199,7 @@
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: var( --main-color);
-  background: #0563bb;
+  background: var(--second-bg-color);
 }
 
 .nav-menu a:hover span,
@@ -253,7 +253,7 @@
 
 .mobile-nav-active .mobile-nav-toggle {
   color: var( --main-color);
-  background-color: #0563bb;
+  background-color: var(--second-bg-color);
 }
 
 /*--------------------------------------------------------------
@@ -299,7 +299,7 @@
 }
 
 #hero p span {
-  color: #0563bb;
+  color: var(--second-bg-color);
   letter-spacing: 1px;
 }
 
@@ -317,7 +317,7 @@
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: var(--second-bg-color);
 }
 
 @media (max-width: 992px) {
@@ -377,7 +377,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: var(--second-bg-color);
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -413,7 +413,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0563bb;
+  color: var(--second-bg-color);
   line-height: 0;
 }
 
@@ -439,7 +439,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: var(--second-bg-color);
   color: var( --main-color);
   border-radius: 50px;
   display: inline-flex;
@@ -496,7 +496,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #0563bb;
+  background-color: var(--second-bg-color);
 }
 
 /*--------------------------------------------------------------
@@ -513,7 +513,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid var(--second-bg-color);
   position: relative;
 }
 
@@ -523,7 +523,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: var(--second-bg-color);
   margin-bottom: 10px;
 }
 
@@ -557,7 +557,7 @@ section {
   left: -9px;
   top: 0;
   background: var( --main-color);
-  border: 2px solid #0563bb;
+  border: 2px solid var(--second-bg-color);
 }
 
 /*--------------------------------------------------------------
@@ -592,7 +592,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: var(--second-bg-color);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -738,11 +738,11 @@ section {
   height: 12px;
   background-color: var( --main-color);
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid var(--second-bg-color);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: var(--second-bg-color);
 }
 
 .portfolio-details .portfolio-info {
@@ -985,11 +985,11 @@ section {
   height: 12px;
   background-color: var( --main-color);
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid var(--second-bg-color);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: var(--second-bg-color);
 }
 
 @media (min-width: 992px) {
@@ -1008,7 +1008,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: var(--second-bg-color);
   float: left;
   width: 44px;
   height: 44px;
@@ -1043,7 +1043,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0563bb;
+  background: var(--second-bg-color);
   color: var( --main-color);
 }
 
@@ -1114,7 +1114,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: var(--second-bg-color);
   border: 0;
   padding: 10px 35px;
   color: var( --main-color);
@@ -1180,7 +1180,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: var(--second-bg-color);
   color: var( --main-color);
   line-height: 1;
   padding: 8px 0;
