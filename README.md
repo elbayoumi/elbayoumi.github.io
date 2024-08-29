@@ -35,6 +35,12 @@ Check out my GitHub stats below:
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=elbayoumi&show_icons=true&theme=github_dark&langs_count=8&layout=compact&hide_border=true)
 
+## 📈 GitHub Details
+
+Here’s a detailed view of my GitHub profile:
+
+![GitHub Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=elbayoumi&theme=github_dark)
+
 ## 🎯 My Goals
 
 I’m committed to continuous learning and development in the tech field. My goal is to keep pushing the boundaries of what's possible and to contribute to projects that make a difference. If you have an exciting project or collaboration in mind, let's make it happen!
