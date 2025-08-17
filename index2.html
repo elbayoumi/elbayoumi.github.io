@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="title">Software Engineer Portfolio</title>
-
-  <!-- SEO Essentials -->
-  <meta name="description" content="Software Engineer portfolio: fast, modern, SEO-optimized. Laravel, React, Node.js, .NET." />
-  <meta name="keywords" content="Software Engineer, Full-Stack, Laravel, React, Node.js, .NET" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Software Engineer Portfolio" />
-  <meta property="og:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
-  <meta property="og:image" content="assets2/img/og-cover.jpg" />
-  <meta property="og:url" content="https://web.elbayoumi.store/" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mohamed Ashraf Elbayoumi",
-    "jobTitle": "Software Engineer",
-    "url": "https://web.elbayoumi.store/",
-    "sameAs": [
-      "https://github.com/",
-      "https://www.linkedin.com/"
-    ]
-  }
-  </script>
-
-  <!-- Bootstrap 5 (CDN) -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets2/css/style.css" />
-
-  <!-- Performance: Preload hero image (improves LCP) -->
-  <link rel="preload" as="image" href="/assets2/img/logo.svg" />
-</head>
+  <head>
+    <!-- Core -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="title">Software Engineer Portfolio</title>
+  
+    <!-- Canonical & i18n -->
+    <link rel="canonical" href="https://web.elbayoumi.store/" />
+    <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="en" />
+    <link rel="alternate" href="https://web.elbayoumi.store/ar/" hreflang="ar" />
+    <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="x-default" />
+  
+    <!-- SEO Essentials -->
+    <meta name="description" content="Software Engineer portfolio: fast, modern, SEO-optimized. Laravel, React, Node.js, .NET." />
+    <meta name="keywords" content="Software Engineer, Full-Stack, Laravel, React, Node.js, .NET" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Mohamed Ashraf Elbayoumi" />
+    <meta name="theme-color" content="#0d6efd" />
+    <meta name="color-scheme" content="light dark" />
+  
+    <!-- Favicons / PWA -->
+    <link rel="icon" type="image/svg+xml" href="/assets2/img/logo.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets2/img/logo-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets2/img/logo-180.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://web.elbayoumi.store/" />
+    <meta property="og:site_name" content="Software Engineer Portfolio" />
+    <meta property="og:title" content="Software Engineer Portfolio" />
+    <meta property="og:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
+    <!-- استخدم اللوجو كصورة المشاركة -->
+    <meta property="og:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohamed Ashraf — Software Engineer Logo" />
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Software Engineer Portfolio" />
+    <meta name="twitter:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
+    <meta name="twitter:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
+  
+    <!-- JSON-LD: Person + WebSite + Organization (logo مستخدم هنا) -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@graph":[
+        {
+          "@type":"Person",
+          "name":"Mohamed Ashraf Elbayoumi",
+          "jobTitle":"Software Engineer",
+          "url":"https://web.elbayoumi.store/",
+          "image":"https://web.elbayoumi.store/assets2/img/logo-social.png",
+          "sameAs":[
+            "https://github.com/",
+            "https://www.linkedin.com/"
+          ]
+        },
+        {
+          "@type":"Organization",
+          "name":"Elbayoumi Web",
+          "url":"https://web.elbayoumi.store/",
+          "logo":{
+            "@type":"ImageObject",
+            "url":"https://web.elbayoumi.store/assets2/img/logo.svg"
+          }
+        },
+        {
+          "@type":"WebSite",
+          "name":"Software Engineer Portfolio",
+          "url":"https://web.elbayoumi.store/",
+          "inLanguage":["en","ar"],
+          "publisher":{
+            "@type":"Organization",
+            "name":"Elbayoumi Web",
+            "logo":{
+              "@type":"ImageObject",
+              "url":"https://web.elbayoumi.store/assets2/img/logo.svg"
+            }
+          },
+          "potentialAction":{
+            "@type":"SearchAction",
+            "target":"https://web.elbayoumi.store/?q={search_term_string}",
+            "query-input":"required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+  
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <!-- CSS (Bootstrap render-blocking فقط) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets2/css/style.css" />
+  
+    <!-- Performance -->
+    <link rel="preload" as="image" href="/assets2/img/logo.svg" />
+    <!-- لو عندك هيرو محلي: -->
+    <!-- <link rel="preload" as="image" href="/assets2/img/profile-hero.webp"
+          imagesrcset="/assets2/img/profile-hero.webp 520w, /assets2/img/profile-hero@2x.webp 1040w"
+          imagesizes="(min-width: 992px) 520px, 90vw"> -->
+  </head>
+  
 <body>
   <!-- Navbar -->
   <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
