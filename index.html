@@ -702,126 +702,117 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
         <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>📂 Portfolio</h2>
-                <p>Selection of my <strong>real-world projects</strong> including full systems, APIs, and web
-                    applications built using Laravel, React.js, Node.js, MySQL, and modern DevOps practices.</p>
+      
+          <div class="section-title">
+            <h2>📂 Portfolio</h2>
+            <p>Selection of my <strong>real-world projects</strong> including full systems, APIs, and web
+              applications built using Laravel, React.js, Node.js, MySQL, and modern DevOps practices.</p>
+          </div>
+      
+          <!-- Filters -->
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">🌍 All</li>
+                <li data-filter=".filter-systems">🖥 Systems</li>
+                <li data-filter=".filter-full">⚡ Full-Stack</li>
+                <li data-filter=".filter-front">🎨 Front-End</li>
+                <li data-filter=".filter-back">🛠 Back-End</li>
+                <li data-filter=".filter-api">🔗 API / DevOps</li>
+              </ul>
             </div>
-
-            <!-- Filters -->
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                    <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">🌍 All</li>
-                        <li data-filter=".filter-systems">🖥 Systems</li>
-                        <li data-filter=".filter-full">⚡ Full-Stack</li>
-                        <li data-filter=".filter-front">🎨 Front-End</li>
-                        <li data-filter=".filter-back">🛠 Back-End</li>
-                        <li data-filter=".filter-api">🔗 API / DevOps</li>
-                    </ul>
+          </div>
+      
+          <!-- Portfolio Items -->
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      
+            <!-- E-commerce System -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/ecommerce-system.png" class="img-fluid" loading="lazy" alt="E-commerce Laravel System">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">🛒</span> E-commerce Platform</h3>
+                  <p>Laravel + MySQL, integrated payment gateways, product management, and admin dashboard.</p>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/elbayoumi/laravel-days" target="_blank" title="Source Code"><i class="bx bxl-github" aria-hidden="true"></i><span class="sr-only">Source Code</span></a>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <!-- Portfolio Items -->
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                <!-- E-commerce System -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/ecommerce-system.png" class="img-fluid" loading="lazy"
-                            alt="E-commerce Laravel System">
-                        <div class="portfolio-info">
-                            <h4>🛒 E-commerce Platform</h4>
-                            <p>Laravel + MySQL, integrated payment gateways, product management, and admin dashboard.
-                            </p>
-                            <div class="portfolio-links">
-                                <a href="https://github.com/elbayoumi/laravel-days" target="_blank"
-                                    title="Source Code"><i class="bx bxl-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
+      
+            <!-- POS & Inventory Management -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/pos-system.png" loading="lazy" class="img-fluid" alt="POS and Inventory System">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">📦</span> POS & Inventory System</h3>
+                  <p>Custom Laravel system for stock control, sales tracking, and invoice generation.</p>
                 </div>
-
-                <!-- POS & Inventory Management -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/pos-system.png" loading="lazy" class="img-fluid"
-                            alt="POS and Inventory System">
-                        <div class="portfolio-info">
-                            <h4>📦 POS & Inventory System</h4>
-                            <p>Custom Laravel system for stock control, sales tracking, and invoice generation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Booking System -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/booking-system.png" loading="lazy" class="img-fluid"
-                            alt="Booking System">
-                        <div class="portfolio-info">
-                            <h4>📅 Booking & Appointment System</h4>
-                            <p>Laravel-based platform for appointment scheduling with email/SMS notifications.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Custom CMS -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/cms-system.png" class="img-fluid" alt="Custom CMS">
-                        <div class="portfolio-info">
-                            <h4>📝 Custom Content Management System</h4>
-                            <p>Built with Laravel for dynamic content creation, role-based access, and SEO tools.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- API for Mobile App -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-api filter-back">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/api-mobile.png" loading="lazy" class="img-fluid"
-                            alt="Mobile App API">
-                        <div class="portfolio-info">
-                            <h4>📱 Laravel REST API</h4>
-                            <p>JWT authentication, API documentation, optimized for mobile app integration.</p>
-                            <div class="portfolio-links">
-                                <a href="https://github.com/R2-PHP-FINAL-G3/apiServe" target="_blank"
-                                    title="Source Code"><i class="bx bxl-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- React Dashboard -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-front">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/react-dashboard.png" class="img-fluid" loading="lazy"
-                            alt="React Admin Dashboard">
-                        <div class="portfolio-info">
-                            <h4>📊 React Admin Dashboard</h4>
-                            <p>SPA dashboard with charts, tables, and API integration.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CI/CD Project -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/devops-ci-cd.png" class="img-fluid" loading="lazy"
-                            alt="CI/CD Pipeline">
-                        <div class="portfolio-info">
-                            <h4>🚀 CI/CD Deployment Pipeline</h4>
-                            <p>Automated Laravel & React deployment using GitHub Actions and Docker.</p>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
-
+      
+            <!-- Booking System -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/booking-system.png" loading="lazy" class="img-fluid" alt="Booking System">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">📅</span> Booking & Appointment System</h3>
+                  <p>Laravel-based platform for appointment scheduling with email/SMS notifications.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Custom CMS -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-systems filter-full">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/cms-system.png" class="img-fluid" alt="Custom CMS">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">📝</span> Custom Content Management System</h3>
+                  <p>Built with Laravel for dynamic content creation, role-based access, and SEO tools.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- API for Mobile App -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-api filter-back">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/api-mobile.png" loading="lazy" class="img-fluid" alt="Mobile App API">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">📱</span> Laravel REST API</h3>
+                  <p>JWT authentication, API documentation, optimized for mobile app integration.</p>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/R2-PHP-FINAL-G3/apiServe" target="_blank" title="Source Code"><i class="bx bxl-github" aria-hidden="true"></i><span class="sr-only">Source Code</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- React Dashboard -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-front">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/react-dashboard.png" class="img-fluid" loading="lazy" alt="React Admin Dashboard">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">📊</span> React Admin Dashboard</h3>
+                  <p>SPA dashboard with charts, tables, and API integration.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- CI/CD Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/devops-ci-cd.png" class="img-fluid" loading="lazy" alt="CI/CD Pipeline">
+                <div class="portfolio-info">
+                  <h3><span aria-hidden="true">🚀</span> CI/CD Deployment Pipeline</h3>
+                  <p>Automated Laravel & React deployment using GitHub Actions and Docker.</p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
         </div>
-    </section>
+      </section>
+      
     <!-- End Portfolio Section -->
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
