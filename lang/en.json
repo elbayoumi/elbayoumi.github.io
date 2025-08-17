@@ -1,60 +1,208 @@
 {
-    "title": "Software Engineer Portfolio",
-    "logo": "👨‍💻 Engineer",
+    "title": "Mohamed Ashraf Elbayoumi | Full-Stack Developer",
+    "logo": "👨‍💻 Mohamed Ashraf",
     "nav_about": "About",
-    "nav_projects": "Projects",
+    "nav_projects": "Portfolio",
     "nav_services": "Services",
     "nav_contact": "Contact",
   
-    "hero_title": "Hi, I’m Mohamed — Software Engineer",
-    "hero_subtitle": "Full‑Stack developer building fast, scalable, and secure web products (Laravel, React, Node.js, .NET).",
-    "hero_btn": "View My Work",
+    "hero_title": "Mohamed Ashraf Elbayoumi",
+    "hero_subtitle": "Full-Stack Web Developer — Laravel, React, Node.js",
+    "hero_btn": "View Portfolio",
     "hero_btn2": "Hire Me",
   
     "about_title": "About Me",
-    "about_text": "I craft production‑grade systems with clean code, testing, CI/CD, and strong UX. I focus on performance (LCP/FCP), accessibility, and SEO.",
-    "skills": ["Laravel","PHP","React","Next.js","Node.js","TypeScript",".NET","PostgreSQL","MySQL","Docker","CI/CD","AWS"],
+    "about_text": "I am a Full-Stack Web Developer specialized in building modern, scalable, and user-friendly applications. Strong experience with Laravel, React.js, Node.js, PHP, JavaScript (ES6+), MySQL, and MongoDB. I deliver clean code, REST APIs, CI/CD integrations, and focus on performance and security.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "React",
+      "Node.js",
+      "JavaScript (ES6+)",
+      "MySQL",
+      "MongoDB",
+      "HTML5",
+      "CSS (SASS, Bootstrap, Tailwind)",
+      "REST APIs",
+      "Git/GitHub",
+      "CI/CD",
+      "Docker",
+      "AWS (EC2, Lambda)"
+    ],
   
-    "services_title": "What I Do",
+    "services_title": "Services",
     "services": [
-      {"icon": "bi-lightning-charge", "title": "Full‑Stack Development", "desc": "From system design to deployment: APIs, dashboards, and mobile‑ready UIs."},
-      {"icon": "bi-rocket", "title": "Performance & SEO", "desc": "Optimize Core Web Vitals (LCP/FCP/CLS) and technical SEO for growth."},
-      {"icon": "bi-shield-check", "title": "Security & DevOps", "desc": "Best practices, containerization, CI/CD, and cloud infrastructure."}
+      {
+        "icon": "bi-code-slash",
+        "title": "Full-Stack Web Development",
+        "desc": "Responsive, high-performance web apps with Laravel, React.js, and Node.js."
+      },
+      {
+        "icon": "bi-link-45deg",
+        "title": "API Development",
+        "desc": "Secure RESTful APIs and backend services for mobile and web."
+      },
+      {
+        "icon": "bi-git",
+        "title": "CI/CD & DevOps",
+        "desc": "Automated deployments using GitHub Actions, Docker, and server optimizations."
+      },
+      {
+        "icon": "bi-database",
+        "title": "Database Architecture",
+        "desc": "Optimized MySQL or MongoDB schemas for scalability and reliability."
+      },
+      {
+        "icon": "bi-layout-text-window",
+        "title": "Dashboards & Admin Panels",
+        "desc": "Intuitive admin dashboards with analytics, charts, and role-based access."
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Ongoing Support",
+        "desc": "Continuous updates, performance monitoring, and troubleshooting."
+      }
     ],
   
     "projects_title": "Selected Projects",
     "projects": [
       {
-        "name": "E‑Commerce Platform",
-        "desc": "Scalable marketplace with payments, analytics, and admin.",
-        "stack": ["Laravel","React","MySQL"],
-        "image": "assets/img/p1.webp",
-        "link": "#",
-        "repo": "#"
+        "name": "E-commerce Platform",
+        "desc": "Laravel + MySQL with payment gateways, product management, and admin dashboard.",
+        "stack": ["Laravel", "MySQL", "Bootstrap"],
+        "image": "assets/img/portfolio/ecommerce-system.png",
+        "link": "",
+        "repo": "https://github.com/elbayoumi/laravel-days"
       },
       {
-        "name": "Ride‑Hailing & Delivery",
-        "desc": "Real‑time tracking, driver incentives, and service points.",
-        "stack": ["Node.js","React Native","Redis"],
-        "image": "assets/img/p2.webp",
-        "link": "#",
-        "repo": "#"
+        "name": "POS & Inventory System",
+        "desc": "Custom Laravel system for stock control, sales tracking, and invoicing.",
+        "stack": ["Laravel", "MySQL"],
+        "image": "assets/img/portfolio/pos-system.png",
+        "link": "",
+        "repo": ""
       },
       {
-        "name": "Multi‑Tenant CRM",
-        "desc": "Email automation, payments, and granular roles.",
-        "stack": ["Laravel","Vue","PostgreSQL"],
-        "image": "assets/img/p3.webp",
-        "link": "#",
-        "repo": "#"
+        "name": "Booking & Appointment System",
+        "desc": "Laravel platform for appointment scheduling with email/SMS notifications.",
+        "stack": ["Laravel", "MySQL"],
+        "image": "assets/img/portfolio/booking-system.png",
+        "link": "",
+        "repo": ""
+      },
+      {
+        "name": "Custom CMS",
+        "desc": "Role-based content management with SEO tools built on Laravel.",
+        "stack": ["Laravel", "MySQL"],
+        "image": "assets/img/portfolio/cms-system.png",
+        "link": "",
+        "repo": ""
+      },
+      {
+        "name": "Laravel REST API",
+        "desc": "JWT authentication and documented endpoints for mobile integration.",
+        "stack": ["Laravel", "JWT", "MySQL"],
+        "image": "assets/img/portfolio/api-mobile.png",
+        "link": "",
+        "repo": "https://github.com/R2-PHP-FINAL-G3/apiServe"
+      },
+      {
+        "name": "React Admin Dashboard",
+        "desc": "SPA dashboard with charts, tables, and API integration.",
+        "stack": ["React", "Charts"],
+        "image": "assets/img/portfolio/react-dashboard.png",
+        "link": "",
+        "repo": ""
+      },
+      {
+        "name": "CI/CD Deployment Pipeline",
+        "desc": "Automated Laravel & React deployments with GitHub Actions and Docker.",
+        "stack": ["GitHub Actions", "Docker"],
+        "image": "assets/img/portfolio/devops-ci-cd.png",
+        "link": "",
+        "repo": ""
       }
     ],
   
     "search_placeholder": "Search projects",
   
-    "contact_title": "Get in Touch",
-    "contact_text": "Open to freelance and long‑term collaborations in MENA & remote.",
+    "contact_title": "Contact",
+    "contact_text": "Let’s build something amazing together. I’m available for new projects and consultations.",
     "contact_btn": "Email Me",
-    "cv_btn_text": "Download CV",
-    "footer_text": "© 2025 Mohamed Ashraf. All rights reserved."
+    "cv_btn_text": "Download Resume",
+    "footer_text": "© 2025 Mohamed Ashraf. All rights reserved.",
+  
+    "profile": {
+      "name": "Mohamed Ashraf Elbayoumi",
+      "title": "Full-Stack Web Developer",
+      "location": "Mansoura, Egypt",
+      "birthday": "1998-02-02",
+      "phone": "+20 102 047 2050",
+      "email": "mohamedashrafelbayoumi@gmail.com",
+      "resume_view": "https://docs.google.com/document/d/1lJctHqTSPMKKnOujnH8r_iwiUN5i-o_uT9RHo4tHm7s/edit?usp=sharing",
+      "resume_file": "assets/laravel developer mohamed elbayoumi cv - Mohamed Ashraf.pdf",
+      "socials": {
+        "github": "https://github.com/elbayoumi",
+        "twitter": "https://twitter.com/MoElbayoumi",
+        "facebook": "https://www.facebook.com/mohamedashrafelbayoumi",
+        "linkedin": "https://www.linkedin.com/in/mohamed-elbayoumi/",
+        "whatsapp": "https://wa.me/201020472050",
+        "phone": "tel:+201020472050"
+      }
+    },
+  
+    "resume": {
+      "summary": "Results-driven developer with strong backend focus and full-stack capabilities. Specialized in Laravel, REST APIs, Docker, AWS EC2, and performance optimization. Delivered 60+ projects with measurable improvements.",
+      "experience": [
+        {
+          "role": "Full-Stack Web Developer",
+          "company": "BMC Training",
+          "period": "Aug 2023 – Present",
+          "highlights": [
+            "Enterprise apps with Laravel & JS frameworks.",
+            "Secure payments & third-party integrations.",
+            "AWS EC2 & Docker deployment pipelines.",
+            "Up to 30% performance improvement via DB optimizations & caching."
+          ]
+        },
+        {
+          "role": "Backend Developer",
+          "company": "BusatyApp",
+          "period": "Jan 2024 – Jul 2024",
+          "highlights": [
+            "Real-time APIs for 1,000+ daily active users.",
+            "WebSockets & Redis for instant sync.",
+            "High availability during school hours with AWS EC2 & Docker."
+          ]
+        },
+        {
+          "role": "Freelance Backend Developer",
+          "company": "Khamsat & Direct Clients",
+          "period": "Jan 2020 – May 2023",
+          "highlights": [
+            "60+ Laravel projects (e-commerce, CMS, booking).",
+            "30% faster delivery via CI/CD & Docker.",
+            "25% conversion lift through API & UX optimization."
+          ]
+        }
+      ],
+      "education": [
+        { "degree": "Master's in Computer Science (In Progress)", "school": "Cairo University", "period": "Jan 2024 – Sep 2027" },
+        { "degree": "Postgraduate Diploma in Computer Science", "school": "FGSSR – Cairo University", "period": "2020 – 2022" },
+        { "degree": "Bachelor’s in History & Civilization", "school": "Al-Azhar University", "period": "2016 – 2020" }
+      ],
+      "courses": [
+        "Modern JavaScript: ES6 and Beyond – Maharatech",
+        "Learn HTML & CSS – ITI-Maharatech",
+        "Pursuing AWS Developer & Kubernetes (ongoing)"
+      ],
+      "tech": {
+        "backend": ["PHP", "Laravel", "REST APIs", "Node.js (basic)", "Python (learning)"],
+        "databases": ["MySQL", "MongoDB", "Redis"],
+        "cloud_devops": ["AWS EC2", "AWS Lambda", "Docker", "CI/CD"],
+        "testing_monitoring": ["PHPUnit", "TDD", "Laravel Telescope"],
+        "frontend": ["HTML", "CSS", "JavaScript (ES6)", "Bootstrap", "Tailwind"]
+      }
+    }
   }
+  
