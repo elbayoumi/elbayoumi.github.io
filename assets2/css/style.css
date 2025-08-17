@@ -13,12 +13,19 @@ section{ scroll-margin-top:90px }
 [dir="rtl"] body{ font-family:"Tajawal","Cairo",system-ui,sans-serif }
 [dir="rtl"] .hero .list-inline{ padding-right:0 }
 
-/* Subtle hover */
+/* Hover */
 .card.hover{ transition:transform .25s ease, box-shadow .25s ease }
 .card.hover:hover{ transform:translateY(-4px); box-shadow:0 10px 30px rgba(0,0,0,.06) }
 
-/* Accessibility */
+/* Focus visible */
 a:focus-visible, button:focus-visible, select:focus-visible{ outline:2px solid #0d6efd; outline-offset:2px }
 
-/* Small tweaks */
-.projects-filter input::placeholder{ opacity:.6 }
+/* Dark mode tweaks */
+@media (prefers-color-scheme: dark){
+  .bg-body-tertiary{ background-color:#111 !important }
+  body{ color:#e6e6e6; background:#0b0b0b }
+  .card{ background:#151515 }
+  .text-secondary{ color:#a7a7a7 !important }
+}
+
+.projects-filter input::placeholder{ opacity:.65 }
