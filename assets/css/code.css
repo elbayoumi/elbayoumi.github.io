@@ -125,4 +125,112 @@
 	 -webkit-transform: translate3d(0, 0, 0);
 	 -webkit-animation: rotate-right 12s linear 0s infinite;
 }
- 
+/* ========== 1) Headings & emoji alignment ========== */
+.section-title h2,
+.resume .resume-title,
+.services .icon-box h4,
+.portfolio .portfolio-info h4,
+#contact .section-title h2,
+footer h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;          /* space between emoji and text */
+  line-height: 1.2;
+  text-wrap: balance;  /* better line breaks on small screens (modern browsers) */
+}
+
+/* Optional: shrink emojis a bit so they don't look oversized on mobile */
+.section-title h2,
+.resume .resume-title,
+.services .icon-box h4,
+.portfolio .portfolio-info h4,
+#contact .section-title h2,
+footer h3,
+.btn {
+  /* scale text with viewport; keeps emojis in check too */
+  font-size: clamp(1rem, 1.2vw + 0.9rem, 1.75rem);
+}
+footer h3 { font-size: clamp(1.1rem, 1.5vw + 1rem, 1.8rem); }
+.services .icon-box h4,
+.portfolio .portfolio-info h4 { font-size: clamp(1rem, 1vw + .9rem, 1.25rem); }
+
+/* ========== 2) Skills labels line-wrap nicely ========== */
+.skills .skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  flex-wrap: wrap;       /* allow label to wrap on small screens */
+}
+.skills .skill .val {
+  white-space: nowrap;   /* keep % intact */
+}
+
+/* Better progress bar height on small screens */
+.skills .progress-bar-wrap { height: 10px; }
+@media (max-width: 576px) {
+  .skills .progress-bar-wrap { height: 8px; }
+}
+
+/* ========== 3) Portfolio filters scroll on mobile ========== */
+#portfolio-flters {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 575.98px) {
+  #portfolio-flters {
+    flex-wrap: nowrap;
+    overflow-x: auto;          /* horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: .25rem;
+  }
+  #portfolio-flters li {
+    flex: 0 0 auto;            /* keep pill width minimal */
+  }
+}
+
+/* ========== 4) Images: never overflow & load nicely ========== */
+.portfolio .portfolio-wrap img,
+.about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== 5) Contact section spacing & wrapping ========== */
+.contact .info h4 {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+.contact .social-links a {
+  font-size: clamp(1.25rem, 1.5vw + 1rem, 1.75rem);
+}
+
+/* ========== 6) Footer social row wraps gracefully ========== */
+footer .social-links {
+  flex-wrap: wrap;
+  row-gap: .5rem;
+}
+footer .social-links a {
+  font-size: clamp(1.25rem, 1.5vw + 1rem, 1.75rem);
+}
+
+/* ========== 7) Buttons with emoji don’t look too big ========== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  line-height: 1.2;
+}
+
+/* ========== 8) Minor container padding on very small screens ========== */
+@media (max-width: 360px) {
+  .container { padding-left: 12px; padding-right: 12px; }
+}
