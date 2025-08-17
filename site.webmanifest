@@ -1,36 +1,59 @@
 {
-    "name": "Mohamed Ashraf Elbayoumi Portfolio",
-    "short_name": "Elbayoumi",
-    "description": "Portfolio of Mohamed Ashraf Elbayoumi — Full-Stack Web Developer specializing in Laravel, React, and Node.js.",
-    "start_url": "/",
-    "scope": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#0d6efd",
-    "orientation": "portrait-primary",
-    "icons": [
-      {
-        "src": "/assets/img/favicon-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "/assets/img/favicon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      },
-      {
-        "src": "/assets/img/favicon.svg",
-        "sizes": "any",
-        "type": "image/svg+xml",
-        "purpose": "any"
-      },
-      {
-        "src": "/assets/img/maskable-icon.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
-      }
-    ]
-  }
-  
+  "id": "/?source=pwa",
+  "name": "Mohamed Ashraf Elbayoumi Portfolio",
+  "short_name": "Elbayoumi",
+  "description": "Portfolio of Mohamed Ashraf Elbayoumi — Full-Stack Web Developer specializing in Laravel, React, and Node.js.",
+  "lang": "en",
+  "dir": "ltr",
+
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "business", "productivity"],
+
+  "icons": [
+    {
+      "src": "/assets2/img/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets2/img/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets2/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets2/img/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "View Portfolio",
+      "short_name": "Portfolio",
+      "url": "/#projects",
+      "icons": [{ "src": "/assets2/img/logo-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "url": "/#contact",
+      "icons": [{ "src": "/assets2/img/logo-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}
