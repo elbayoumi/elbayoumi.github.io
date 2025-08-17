@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title id="title">Software Engineer Portfolio</title>
-  
+
     <!-- Canonical & i18n -->
     <link rel="canonical" href="https://web.elbayoumi.store/" />
     <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="en" />
     <link rel="alternate" href="https://web.elbayoumi.store/ar/" hreflang="ar" />
     <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="x-default" />
-  
+
     <!-- SEO Essentials -->
     <meta name="description" content="Software Engineer portfolio: fast, modern, SEO-optimized. Laravel, React, Node.js, .NET." />
     <meta name="keywords" content="Software Engineer, Full-Stack, Laravel, React, Node.js, .NET" />
@@ -19,32 +19,31 @@
     <meta name="author" content="Mohamed Ashraf Elbayoumi" />
     <meta name="theme-color" content="#0d6efd" />
     <meta name="color-scheme" content="light dark" />
-  
+
     <!-- Favicons / PWA -->
     <link rel="icon" type="image/svg+xml" href="/assets2/img/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets2/img/logo-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets2/img/logo-180.png" />
     <link rel="manifest" href="/site.webmanifest" />
-  
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://web.elbayoumi.store/" />
     <meta property="og:site_name" content="Software Engineer Portfolio" />
     <meta property="og:title" content="Software Engineer Portfolio" />
     <meta property="og:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
-    <!-- استخدم اللوجو كصورة المشاركة -->
     <meta property="og:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Mohamed Ashraf — Software Engineer Logo" />
-  
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Software Engineer Portfolio" />
     <meta name="twitter:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
     <meta name="twitter:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
-  
-    <!-- JSON-LD: Person + WebSite + Organization (logo مستخدم هنا) -->
+
+    <!-- JSON-LD: Person + WebSite + Organization -->
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
@@ -91,152 +90,181 @@
       ]
     }
     </script>
-  
+
     <!-- Preconnects -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-    <!-- CSS (Bootstrap render-blocking فقط) -->
+
+    <!-- CSS (Bootstrap render-blocking only) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets2/css/style.css" />
-  
-    <!-- Performance -->
-    <link rel="preload" as="image" href="/assets2/img/logo.svg" />
-    <!-- لو عندك هيرو محلي: -->
-    <!-- <link rel="preload" as="image" href="/assets2/img/profile-hero.webp"
-          imagesrcset="/assets2/img/profile-hero.webp 520w, /assets2/img/profile-hero@2x.webp 1040w"
-          imagesizes="(min-width: 992px) 520px, 90vw"> -->
+
+    <!-- Performance: Preload LCP hero candidate -->
+    <link rel="preload" as="image"
+          href="/assets2/img/hero-520.webp"
+          imagesrcset="/assets2/img/hero-520.webp 520w, /assets2/img/hero-780.webp 780w, /assets2/img/hero-1040.webp 1040w"
+          imagesizes="(min-width: 992px) 520px, 90vw">
   </head>
-  
-<body>
-  <!-- Navbar -->
-  <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
-        <span class="bi bi-code-slash fs-4"></span>
-        <span id="logo">Software Engineer</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#about" id="nav_about"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects" id="nav_projects"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#services" id="nav_services"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" id="nav_contact"></a></li>
-          <li class="nav-item ms-lg-3">
-            <select class="form-select form-select-sm" id="langSwitcher" aria-label="Language switcher">
-              <option value="en" selected>EN</option>
-              <option value="ar">AR</option>
-            </select>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero position-relative overflow-hidden">
-    <div class="container position-relative z-2 py-5">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7">
-          <h1 class="display-5 fw-bold mb-3" id="hero_title"></h1>
-          <p class="lead text-secondary mb-4" id="hero_subtitle"></p>
-          <div class="d-flex gap-3">
-            <a href="#projects" class="btn btn-primary btn-lg" id="hero_btn"></a>
-            <a href="#contact" class="btn btn-outline-secondary btn-lg" id="hero_btn2"></a>
-          </div>
-          <ul class="list-inline mt-4" id="hero_badges">
-            <li class="list-inline-item badge text-bg-light">Laravel</li>
-            <li class="list-inline-item badge text-bg-light">React</li>
-            <li class="list-inline-item badge text-bg-light">Node.js</li>
-            <li class="list-inline-item badge text-bg-light">.NET</li>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+          <span class="bi bi-code-slash fs-4"></span>
+          <span id="logo">Software Engineer</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about" id="nav_about"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" id="nav_projects"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services" id="nav_services"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" id="nav_contact"></a></li>
+            <li class="nav-item ms-lg-3">
+              <select class="form-select form-select-sm" id="langSwitcher" aria-label="Language switcher">
+                <option value="en" selected>EN</option>
+                <option value="ar">AR</option>
+              </select>
+            </li>
           </ul>
-        </div>
-        <div class="col-lg-5 text-center">
-          <img src="/assets2/img/hero.png" class="hero-img shadow-lg"  height="360" alt="Software Engineer" loading="eager" decoding="async" />
-        </div>
+        </nav>
       </div>
-    </div>
-    <div class="hero-bg"></div>
-  </section>
+    </header>
 
-  <!-- About -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-5 text-center">
-          <img src="assets2/img/profile.png" class="rounded-4 shadow-sm w-100" width="480" height="480" alt="Profile" loading="lazy" decoding="async" />
-        </div>
-        <div class="col-lg-7">
-          <h2 class="h1 mb-3" id="about_title"></h2>
-          <p class="text-secondary" id="about_text"></p>
-          <div class="d-flex flex-wrap gap-2 mt-3" id="about_tags">
-            <!-- skills badges injected via JS -->
+    <!-- Hero -->
+    <section class="hero position-relative overflow-hidden">
+      <div class="container position-relative z-2 py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold mb-3" id="hero_title"></h1>
+            <p class="lead text-secondary mb-4" id="hero_subtitle"></p>
+            <div class="d-flex gap-3">
+              <a href="#projects" class="btn btn-primary btn-lg" id="hero_btn"></a>
+              <a href="#contact" class="btn btn-outline-secondary btn-lg" id="hero_btn2"></a>
+            </div>
+            <ul class="list-inline mt-4" id="hero_badges">
+              <li class="list-inline-item badge text-bg-light">Laravel</li>
+              <li class="list-inline-item badge text-bg-light">React</li>
+              <li class="list-inline-item badge text-bg-light">Node.js</li>
+              <li class="list-inline-item badge text-bg-light">.NET</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 text-center">
+            <!-- Responsive hero image with AVIF/WebP fallbacks -->
+            <picture>
+              <source
+                type="image/avif"
+                srcset="/assets2/img/hero-520.avif 520w, /assets2/img/hero-780.avif 780w, /assets2/img/hero-1040.avif 1040w"
+                sizes="(min-width: 992px) 520px, 90vw" />
+              <source
+                type="image/webp"
+                srcset="/assets2/img/hero-520.webp 520w, /assets2/img/hero-780.webp 780w, /assets2/img/hero-1040.webp 1040w"
+                sizes="(min-width: 992px) 520px, 90vw" />
+              <img
+                src="/assets2/img/hero-520.jpg"
+                srcset="/assets2/img/hero-520.jpg 520w, /assets2/img/hero-780.jpg 780w, /assets2/img/hero-1040.jpg 1040w"
+                sizes="(min-width: 992px) 520px, 90vw"
+                class="hero-img shadow-lg"
+                width="520" height="360"
+                alt="Software Engineer"
+                loading="eager" decoding="async" />
+            </picture>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-bg"></div>
+    </section>
 
-  <!-- Services -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="h1 text-center mb-4" id="services_title"></h2>
-      <div class="row g-4" id="services_cards">
-        <!-- filled by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between mb-3">
-        <h2 class="h1" id="projects_title"></h2>
-        <div class="input-group input-group-sm projects-filter" style="max-width: 320px;">
-          <span class="input-group-text"><i class="bi bi-search"></i></span>
-          <input id="projectSearch" type="search" class="form-control" placeholder="Search projects" aria-label="Search projects" />
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 text-center">
+            <!-- Responsive profile image -->
+            <picture>
+              <source type="image/avif"
+                srcset="/assets2/img/profile-320.avif 320w, /assets2/img/profile-480.avif 480w, /assets2/img/profile-640.avif 640w"
+                sizes="(min-width: 1200px) 480px, (min-width: 992px) 40vw, 90vw" />
+              <source type="image/webp"
+                srcset="/assets2/img/profile-320.webp 320w, /assets2/img/profile-480.webp 480w, /assets2/img/profile-640.webp 640w"
+                sizes="(min-width: 1200px) 480px, (min-width: 992px) 40vw, 90vw" />
+              <img
+                src="/assets2/img/profile-480.jpg"
+                srcset="/assets2/img/profile-320.jpg 320w, /assets2/img/profile-480.jpg 480w, /assets2/img/profile-640.jpg 640w"
+                sizes="(min-width: 1200px) 480px, (min-width: 992px) 40vw, 90vw"
+                class="rounded-4 shadow-sm w-100"
+                width="480" height="480"
+                alt="Profile"
+                loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="h1 mb-3" id="about_title"></h2>
+            <p class="text-secondary" id="about_text"></p>
+            <div class="d-flex flex-wrap gap-2 mt-3" id="about_tags"></div>
+          </div>
         </div>
       </div>
-      <div class="row g-4" id="projects_list">
-        <!-- cards injected via JS -->
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card border-0 shadow-sm p-4">
-            <h2 class="h1 mb-3" id="contact_title"></h2>
-            <p class="text-secondary" id="contact_text"></p>
-            <div class="d-flex flex-wrap gap-2 mt-3">
-              <a id="contact_btn" href="mailto:admin@elbayoumi.store" class="btn btn-primary btn-lg"></a>
-              <a id="cv_btn" href="assets2/cv.pdf" class="btn btn-outline-secondary btn-lg" download>
-                <i class="bi bi-download me-2"></i><span id="cv_btn_text">Download CV</span>
-              </a>
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h1 text-center mb-4" id="services_title"></h2>
+        <div class="row g-4" id="services_cards"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h1" id="projects_title"></h2>
+          <div class="input-group input-group-sm projects-filter" style="max-width: 320px;">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input id="projectSearch" type="search" class="form-control" placeholder="Search projects" aria-label="Search projects" />
+          </div>
+        </div>
+        <div class="row g-4" id="projects_list"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <h2 class="h1 mb-3" id="contact_title"></h2>
+              <p class="text-secondary" id="contact_text"></p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a id="contact_btn" href="mailto:admin@elbayoumi.store" class="btn btn-primary btn-lg"></a>
+                <a id="cv_btn" href="assets2/cv.pdf" class="btn btn-outline-secondary btn-lg" download>
+                  <i class="bi bi-download me-2"></i><span id="cv_btn_text">Download CV</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="py-4 text-center small text-secondary">
-    <div class="container">
-      <span id="footer_text">© 2025 Mohamed Ashraf. All rights reserved.</span>
-    </div>
-  </footer>
+    <footer class="py-4 text-center small text-secondary">
+      <div class="container">
+        <span id="footer_text">© 2025 Mohamed Ashraf. All rights reserved.</span>
+      </div>
+    </footer>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <script src="assets2/js/app.js" defer></script>
-</body>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous" defer></script>
+    <script src="assets2/js/app.js" defer></script>
+  </body>
 </html>
