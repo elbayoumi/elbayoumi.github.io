@@ -1,134 +1,238 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Core -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title id="title">Software Engineer Portfolio</title>
-  
-    <!-- Canonical & i18n -->
-    <link rel="canonical" href="https://web.elbayoumi.store/" />
-    <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="en" />
-    <link rel="alternate" href="https://web.elbayoumi.store/ar/" hreflang="ar" />
-    <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="x-default" />
-  
-    <!-- SEO Essentials -->
-    <meta name="description" content="Software Engineer portfolio: fast, modern, SEO-optimized. Laravel, React, Node.js, .NET." />
-    <meta name="keywords" content="Software Engineer, Full-Stack, Laravel, React, Node.js, .NET" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="author" content="Mohamed Ashraf Elbayoumi" />
-    <meta name="theme-color" content="#0d6efd" />
-    <meta name="color-scheme" content="light dark" />
-  
-    <!-- Favicons / PWA -->
-    <link rel="icon" type="image/svg+xml" href="/assets2/img/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets2/img/logo-32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="https://web.elbayoumi.store/assets/img/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets2/img/logo-180.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://web.elbayoumi.store/" />
-    <meta property="og:site_name" content="Software Engineer Portfolio" />
-    <meta property="og:title" content="Software Engineer Portfolio" />
-    <meta property="og:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
-    <!-- استخدم اللوجو كصورة المشاركة -->
-    <meta property="og:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Mohamed Ashraf — Software Engineer Logo" />
-  
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Software Engineer Portfolio" />
-    <meta name="twitter:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
-    <meta name="twitter:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
-  
-    <!-- JSON-LD: Person + WebSite + Organization (logo مستخدم هنا) -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@graph":[
-        {
-          "@type":"Person",
-          "name":"Mohamed Ashraf Elbayoumi",
-          "jobTitle":"Software Engineer",
-          "url":"https://web.elbayoumi.store/",
-          "image":"https://web.elbayoumi.store/assets2/img/logo-social.png",
-          "sameAs":[
-            "https://github.com/",
-            "https://www.linkedin.com/"
-          ]
-        },
-        {
-          "@type":"Organization",
-          "name":"Elbayoumi Web",
-          "url":"https://web.elbayoumi.store/",
-          "logo":{
-            "@type":"ImageObject",
-            "url":"https://web.elbayoumi.store/assets2/img/logo.svg"
-          }
-        },
-        {
-          "@type":"WebSite",
-          "name":"Software Engineer Portfolio",
-          "url":"https://web.elbayoumi.store/",
-          "inLanguage":["en","ar"],
-          "publisher":{
-            "@type":"Organization",
-            "name":"Elbayoumi Web",
-            "logo":{
-              "@type":"ImageObject",
-              "url":"https://web.elbayoumi.store/assets2/img/logo.svg"
-            }
-          },
-          "potentialAction":{
-            "@type":"SearchAction",
-            "target":"https://web.elbayoumi.store/?q={search_term_string}",
-            "query-input":"required name=search_term_string"
-          }
+
+<head>
+  <!-- Core -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="title">Mohamed Ashraf Elbayoumi | Full-Stack Developer</title>
+
+  <!-- Canonical & i18n -->
+  <link rel="canonical" href="https://web.elbayoumi.store/" />
+  <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="en" />
+  <link rel="alternate" href="https://web.elbayoumi.store/ar/" hreflang="ar" />
+  <link rel="alternate" href="https://web.elbayoumi.store/" hreflang="x-default" />
+
+  <!-- SEO Essentials -->
+  <meta name="description"
+    content="Full-Stack Web Developer specialized in Laravel, React, Node.js, REST APIs, and DevOps. I build fast, secure, SEO-friendly web apps." />
+  <meta name="keywords" content="Software Engineer, Full-Stack, Laravel, React, Node.js, .NET, DevOps" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Mohamed Ashraf Elbayoumi" />
+  <meta name="theme-color" content="#0d6efd" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://web.elbayoumi.store/" />
+  <meta property="og:site_name" content="Software Engineer Portfolio" />
+  <meta property="og:title" content="Mohamed Ashraf Elbayoumi | Full-Stack Developer" />
+  <meta property="og:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
+  <meta property="og:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mohamed Ashraf — Software Engineer Logo" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohamed Ashraf Elbayoumi | Full-Stack Developer" />
+  <meta name="twitter:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
+  <meta name="twitter:image" content="https://web.elbayoumi.store/assets2/img/logo-social.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Person",
+        "name":"Mohamed Ashraf Elbayoumi",
+        "jobTitle":"Software Engineer",
+        "url":"https://web.elbayoumi.store/",
+        "image":"https://web.elbayoumi.store/assets2/img/logo-social.png",
+        "telephone":"+201020472050",
+        "email":"mailto:mohamedashrafelbayoumi@gmail.com",
+        "sameAs":[
+          "https://github.com/elbayoumi",
+          "https://www.linkedin.com/in/mohamed-elbayoumi/",
+          "https://wa.me/201020472050"
+        ]
+      },
+      {
+        "@type":"Organization",
+        "name":"Elbayoumi Web",
+        "url":"https://web.elbayoumi.store/",
+        "logo":{"@type":"ImageObject","url":"https://web.elbayoumi.store/assets2/img/logo.svg"},
+        "contactPoint":[{
+          "@type":"ContactPoint",
+          "contactType":"customer support",
+          "telephone":"+201020472050",
+          "email":"admin@elbayoumi.store",
+          "availableLanguage":["en","ar"]
+        }]
+      },
+      {
+        "@type":"WebSite",
+        "name":"Software Engineer Portfolio",
+        "url":"https://web.elbayoumi.store/",
+        "inLanguage":["en","ar"],
+        "publisher":{"@type":"Organization","name":"Elbayoumi Web"},
+        "potentialAction":{
+          "@type":"SearchAction",
+          "target":"https://web.elbayoumi.store/?q={search_term_string}",
+          "query-input":"required name=search_term_string"
         }
-      ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicons / PWA (paths unified) -->
+  <link rel="icon" type="image/svg+xml" href="/assets2/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets2/img/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets2/img/logo-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets2/img/logo-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets2/css/style.css" />
+
+  <!-- Performance -->
+  <link rel="preload" as="image" href="/assets2/img/logo.svg" />
+  <link rel="preload" as="image" href="/assets2/img/hero.png" />
+
+  <!-- Minimal a11y helper for skip-link (optional) + Social brand colors -->
+  <style>
+    .visually-hidden-focusable:not(:focus):not(:active) {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
     }
-    </script>
-  
-    <!-- Preconnects -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-    <!-- CSS (Bootstrap render-blocking فقط) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets2/css/style.css" />
-  
-    <!-- Performance -->
-    <link rel="preload" as="image" href="/assets2/img/logo.svg" />
-    <!-- لو عندك هيرو محلي: -->
-    <!-- <link rel="preload" as="image" href="/assets2/img/profile-hero.webp"
-          imagesrcset="/assets2/img/profile-hero.webp 520w, /assets2/img/profile-hero@2x.webp 1040w"
-          imagesizes="(min-width: 992px) 520px, 90vw"> -->
-  </head>
-  
+
+    /* ===== Social brand buttons ===== */
+    :root {
+      --brand-github: #181717;
+      --brand-linkedin: #0A66C2;
+      --brand-whatsapp: #25D366;
+      --brand-phone: #198754;
+      /* Bootstrap success */
+    }
+
+    .social-icons {
+      display: flex;
+      gap: .5rem;
+      align-items: center
+    }
+
+    .btn-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #6c757d;
+      border: 0;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+      transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+      line-height: 0;
+    }
+
+    .btn-icon i {
+      font-size: 1.1rem
+    }
+
+    .btn-icon.github {
+      background: var(--brand-github)
+    }
+
+    .btn-icon.linkedin {
+      background: var(--brand-linkedin)
+    }
+
+    .btn-icon.whatsapp {
+      background: var(--brand-whatsapp)
+    }
+
+    .btn-icon.phone {
+      background: var(--brand-phone)
+    }
+
+    .btn-icon:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.08)
+    }
+
+    .btn-icon:focus {
+      outline: 2px solid rgba(13, 110, 253, .5);
+      outline-offset: 2px
+    }
+  </style>
+</head>
+
 <body>
+  <a href="#content" class="visually-hidden-focusable">Skip to content</a>
+
   <!-- Navbar -->
   <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
         <span class="bi bi-code-slash fs-4"></span>
-        <span id="logo">Software Engineer</span>
+        <span id="logo">👨‍💻 Mohamed Ashraf</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <nav id="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#about" id="nav_about"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects" id="nav_projects"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#services" id="nav_services"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" id="nav_contact"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" id="nav_about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" id="nav_projects">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" id="nav_services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" id="nav_contact">Contact</a></li>
+
+          <!-- Social icons in header (brand colors) -->
+          <li class="nav-item ms-lg-3 d-none d-lg-block">
+            <div class="social-icons">
+              <a href="https://github.com/elbayoumi" class="btn-icon github" target="_blank" rel="noopener"
+                aria-label="GitHub">
+                <i class="bi bi-github" aria-hidden="true"></i>
+                <span class="visually-hidden">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-elbayoumi/" class="btn-icon linkedin" target="_blank"
+                rel="noopener" aria-label="LinkedIn">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+              <a href="https://wa.me/201020472050" class="btn-icon whatsapp" target="_blank" rel="noopener"
+                aria-label="WhatsApp">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                <span class="visually-hidden">WhatsApp</span>
+              </a>
+              <a href="tel:+201020472050" class="btn-icon phone" aria-label="Phone">
+                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span class="visually-hidden">Phone</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Language switcher -->
           <li class="nav-item ms-lg-3">
             <select class="form-select form-select-sm" id="langSwitcher" aria-label="Language switcher">
               <option value="en" selected>EN</option>
@@ -145,11 +249,11 @@
     <div class="container position-relative z-2 py-5">
       <div class="row align-items-center g-4">
         <div class="col-lg-7">
-          <h1 class="display-5 fw-bold mb-3" id="hero_title"></h1>
-          <p class="lead text-secondary mb-4" id="hero_subtitle"></p>
+          <h1 class="display-5 fw-bold mb-3" id="hero_title">Mohamed Ashraf Elbayoumi</h1>
+          <p class="lead text-secondary mb-4" id="hero_subtitle">Full-Stack Web Developer — Laravel, React, Node.js</p>
           <div class="d-flex gap-3">
-            <a href="#projects" class="btn btn-primary btn-lg" id="hero_btn"></a>
-            <a href="#contact" class="btn btn-outline-secondary btn-lg" id="hero_btn2"></a>
+            <a href="#projects" class="btn btn-primary btn-lg" id="hero_btn">View Portfolio</a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg" id="hero_btn2">Hire Me</a>
           </div>
           <ul class="list-inline mt-4" id="hero_badges">
             <li class="list-inline-item badge text-bg-light">Laravel</li>
@@ -159,85 +263,182 @@
           </ul>
         </div>
         <div class="col-lg-5 text-center">
-          <img src="/assets2/img/hero.png" class="hero-img shadow-lg"  height="360" alt="Software Engineer" loading="eager" decoding="async" />
+          <img src="/assets2/img/hero.png" class="hero-img shadow-lg" width="560" height="360"
+            alt="Portfolio hero — Mohamed Ashraf" loading="eager" decoding="async" fetchpriority="high" />
         </div>
       </div>
     </div>
     <div class="hero-bg"></div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-5 text-center">
-          <img src="assets2/img/profile.png" class="rounded-4 shadow-sm w-100" width="480" height="480" alt="Profile" loading="lazy" decoding="async" />
-        </div>
-        <div class="col-lg-7">
-          <h2 class="h1 mb-3" id="about_title"></h2>
-          <p class="text-secondary" id="about_text"></p>
-          <div class="d-flex flex-wrap gap-2 mt-3" id="about_tags">
-            <!-- skills badges injected via JS -->
+  <main id="content">
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 text-center">
+            <img src="/assets2/img/profile.png" class="rounded-4 shadow-sm w-100" width="480" height="480"
+              alt="Profile photo — Mohamed Ashraf" loading="lazy" decoding="async" />
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="h1 text-center mb-4" id="services_title"></h2>
-      <div class="row g-4" id="services_cards">
-        <!-- filled by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between mb-3">
-        <h2 class="h1" id="projects_title"></h2>
-        <div class="input-group input-group-sm projects-filter" style="max-width: 320px;">
-          <span class="input-group-text"><i class="bi bi-search"></i></span>
-          <input id="projectSearch" type="search" class="form-control" placeholder="Search projects" aria-label="Search projects" />
-        </div>
-      </div>
-      <div class="row g-4" id="projects_list">
-        <!-- cards injected via JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card border-0 shadow-sm p-4">
-            <h2 class="h1 mb-3" id="contact_title"></h2>
-            <p class="text-secondary" id="contact_text"></p>
-            <div class="d-flex flex-wrap gap-2 mt-3">
-              <a id="contact_btn" href="mailto:admin@elbayoumi.store" class="btn btn-primary btn-lg"></a>
-              <a id="cv_btn" href="assets2/laravel developer mohamed elbayoumi cv - Mohamed Ashraf.pdf" class="btn btn-outline-secondary btn-lg" download>
-                <i class="bi bi-download me-2"></i><span id="cv_btn_text">Download CV</span>
-              </a>
+          <div class="col-lg-7">
+            <h2 class="h1 mb-3" id="about_title">About Me</h2>
+            <p class="text-secondary" id="about_text">
+              I am a Full-Stack Web Developer specialized in building modern, scalable, and user-friendly applications.
+              Strong experience with Laravel, React.js, Node.js, PHP, JavaScript (ES6+), MySQL, and MongoDB.
+              I deliver clean code, REST APIs, CI/CD integrations, and focus on performance and security.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-3" id="about_tags">
+              <!-- Skills badges injected via JS -->
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h1 text-center mb-4" id="services_title">Services</h2>
+        <div class="row g-4" id="services_cards">
+          <!-- Fallback sample (will be replaced by JS render) -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light mb-3"
+                  style="width:56px;height:56px;">
+                  <i class="bi bi-code-slash fs-4"></i>
+                </div>
+                <h3 class="h5">Full-Stack Web Development</h3>
+                <p class="text-secondary mb-0">Responsive, high-performance web apps with Laravel, React.js, and
+                  Node.js.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light mb-3"
+                  style="width:56px;height:56px;">
+                  <i class="bi bi-link-45deg fs-4"></i>
+                </div>
+                <h3 class="h5">API Development</h3>
+                <p class="text-secondary mb-0">Secure RESTful APIs and backend services for mobile and web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light mb-3"
+                  style="width:56px;height:56px;">
+                  <i class="bi bi-git fs-4"></i>
+                </div>
+                <h3 class="h5">CI/CD & DevOps</h3>
+                <p class="text-secondary mb-0">Automated deployments using GitHub Actions, Docker, and server
+                  optimizations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h1" id="projects_title">Selected Projects</h2>
+          <div class="input-group input-group-sm projects-filter" style="max-width: 320px;">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input id="projectSearch" type="search" class="form-control" placeholder="Search projects"
+              aria-label="Search projects" />
+          </div>
+        </div>
+        <div class="row g-4" id="projects_list">
+          <!-- Cards injected via JS from i18n JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <h2 class="h1 mb-3" id="contact_title">Contact</h2>
+              <p class="text-secondary" id="contact_text">
+                Let’s build something amazing together. I’m available for new projects and consultations.
+              </p>
+
+              <!-- Social icons inside contact card (brand colors) -->
+              <div class="social-icons mt-2">
+                <a href="https://github.com/elbayoumi" class="btn-icon github" target="_blank" rel="noopener"
+                  aria-label="GitHub">
+                  <i class="bi bi-github"></i><span class="visually-hidden">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-elbayoumi/" class="btn-icon linkedin" target="_blank"
+                  rel="noopener" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i><span class="visually-hidden">LinkedIn</span>
+                </a>
+                <a href="https://wa.me/201020472050" class="btn-icon whatsapp" target="_blank" rel="noopener"
+                  aria-label="WhatsApp">
+                  <i class="bi bi-whatsapp"></i><span class="visually-hidden">WhatsApp</span>
+                </a>
+                <a href="tel:+201020472050" class="btn-icon phone" aria-label="Phone">
+                  <i class="bi bi-telephone-fill"></i><span class="visually-hidden">Phone</span>
+                </a>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a id="contact_btn" href="mailto:mohamedashrafelbayoumi@gmail.com" class="btn btn-primary btn-lg">Email
+                  Me</a>
+                <a id="cv_btn" href="/assets2/Mohamed-Ashraf-Elbayoumi-CV.pdf" class="btn btn-outline-secondary btn-lg"
+                  download>
+                  <i class="bi bi-download me-2"></i><span id="cv_btn_text">Download Resume</span>
+                </a>
+              </div>
+
+              <!-- Optional: show phone as text -->
+              <p class="mt-3 mb-0 text-secondary">
+                <i class="bi bi-telephone me-1"></i>
+                <a href="tel:+201020472050">+20 102 047 2050</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="py-4 text-center small text-secondary">
     <div class="container">
       <span id="footer_text">© 2025 Mohamed Ashraf. All rights reserved.</span>
+      <div class="social-icons mt-2 justify-content-center">
+        <a href="https://github.com/elbayoumi" class="btn-icon github" target="_blank" rel="noopener"
+          aria-label="GitHub">
+          <i class="bi bi-github"></i><span class="visually-hidden">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-elbayoumi/" class="btn-icon linkedin" target="_blank"
+          rel="noopener" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i><span class="visually-hidden">LinkedIn</span>
+        </a>
+        <a href="https://wa.me/201020472050" class="btn-icon whatsapp" target="_blank" rel="noopener"
+          aria-label="WhatsApp">
+          <i class="bi bi-whatsapp"></i><span class="visually-hidden">WhatsApp</span>
+        </a>
+        <a href="tel:+201020472050" class="btn-icon phone" aria-label="Phone">
+          <i class="bi bi-telephone-fill"></i><span class="visually-hidden">Phone</span>
+        </a>
+      </div>
     </div>
   </footer>
 
   <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <script src="assets2/js/app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <script src="/assets2/js/app.js" defer></script>
 </body>
+
 </html>
