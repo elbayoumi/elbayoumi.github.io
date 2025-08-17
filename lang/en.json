@@ -1,0 +1,22 @@
+{
+    "title": "Software Engineer Portfolio",
+    "logo": "👨‍💻 Engineer",
+    "nav_about": "About",
+    "nav_projects": "Projects",
+    "nav_contact": "Contact",
+    "hero_title": "Hi, I am Mohamed Ashraf",
+    "hero_subtitle": "Full-Stack Software Engineer specializing in scalable web apps",
+    "hero_btn": "View My Work",
+    "about_title": "About Me",
+    "about_text": "I am a passionate software engineer with experience in Laravel, React, Node.js, and .NET.",
+    "projects_title": "Selected Projects",
+    "projects": [
+      {"name": "E-Commerce Platform", "desc": "Built with Laravel & React."},
+      {"name": "Ride-Hailing App", "desc": "Smart transport solution with live tracking."},
+      {"name": "CRM System", "desc": "Multi-tenant CRM with email & payment integration."}
+    ],
+    "contact_title": "Get in Touch",
+    "contact_text": "Feel free to reach out for collaborations or opportunities.",
+    "contact_btn": "Email Me"
+  }
+  
