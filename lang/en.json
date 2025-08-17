@@ -140,6 +140,94 @@
             "image": "assets2/img/portfolio/devops-ci-cd.png",
             "link": "",
             "repo": ""
+        },
+        {
+            "name": "Student Registration System",
+            "desc": "Multi-step dynamic registration form with AJAX, Select2, and schedule management.",
+            "stack": [
+                "Laravel",
+                "Blade",
+                "jQuery",
+                "MySQL"
+            ],
+            "image": "assets2/img/portfolio/student-registration.png",
+            "link": "",
+            "repo": ""
+        },
+        {
+            "name": "Multi-Tenant SaaS Platform",
+            "desc": "Restaurant & Institution management with custom website builder and PWA support.",
+            "stack": [
+                "Laravel",
+                "MySQL",
+                "Docker",
+                "Multi-Tenancy"
+            ],
+            "image": "assets2/img/portfolio/multi-tenant-saas.png",
+            "link": "",
+            "repo": ""
+        },
+        {
+            "name": "School Bus Tracking System",
+            "desc": "Real-time bus tracking with parent, driver, and supervisor apps integration.",
+            "stack": [
+                "Laravel",
+                "Firebase",
+                "MySQL"
+            ],
+            "image": "assets2/img/portfolio/school-bus-tracking.png",
+            "link": "https://play.google.com/store/apps/details?id=com.busaty.supervisor&hl=en_SG",
+            "repo": "https://github.com/orgs/busatyapp/repositories"
+        },
+        {
+            "name": "Smart Ride-Hailing & Delivery Platform (TalaRide)",
+            "desc": "Next-gen ride-hailing & delivery app with gamification, driver incentives, and smart logistics.",
+            "stack": [
+                "Laravel",
+                "React",
+                "Docker",
+                "MySQL"
+            ],
+            "image": "assets2/img/portfolio/talaride.png",
+            "link": "",
+            "repo": ""
+        },
+        {
+            "name": "Student Portal",
+            "desc": "Portal with enrollment history, attendance check-in, geolocation, and certificate downloads.",
+            "stack": [
+                "Laravel",
+                "Blade",
+                "Leaflet.js",
+                "AJAX"
+            ],
+            "image": "assets2/img/portfolio/student-portal.png",
+            "link": "",
+            "repo": ""
+        },
+        {
+            "name": "Analytics Dashboard",
+            "desc": "Interactive dashboard with DataTables, ApexCharts, and tenant-based statistics.",
+            "stack": [
+                "Laravel",
+                "ApexCharts",
+                "DataTables"
+            ],
+            "image": "assets2/img/portfolio/analytics-dashboard.png",
+            "link": "",
+            "repo": ""
+        },
+        {
+            "name": "Graduation Project - Restaurant Ordering",
+            "desc": "Restaurant QR-based ordering system with categories, menus, tables, and admin management.",
+            "stack": [
+                "Laravel",
+                "Vue.js",
+                "MySQL"
+            ],
+            "image": "assets2/img/portfolio/restaurant-ordering.png",
+            "link": "",
+            "repo": ""
         }
     ],
     "search_placeholder": "Search projects",
