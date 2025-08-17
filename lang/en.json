@@ -3,20 +3,58 @@
     "logo": "👨‍💻 Engineer",
     "nav_about": "About",
     "nav_projects": "Projects",
+    "nav_services": "Services",
     "nav_contact": "Contact",
-    "hero_title": "Hi, I am Mohamed Ashraf",
-    "hero_subtitle": "Full-Stack Software Engineer specializing in scalable web apps",
+  
+    "hero_title": "Hi, I’m Mohamed — Software Engineer",
+    "hero_subtitle": "Full‑Stack developer building fast, scalable, and secure web products (Laravel, React, Node.js, .NET).",
     "hero_btn": "View My Work",
+    "hero_btn2": "Hire Me",
+  
     "about_title": "About Me",
-    "about_text": "I am a passionate software engineer with experience in Laravel, React, Node.js, and .NET.",
+    "about_text": "I craft production‑grade systems with clean code, testing, CI/CD, and strong UX. I focus on performance (LCP/FCP), accessibility, and SEO.",
+    "skills": ["Laravel","PHP","React","Next.js","Node.js","TypeScript",".NET","PostgreSQL","MySQL","Docker","CI/CD","AWS"],
+  
+    "services_title": "What I Do",
+    "services": [
+      {"icon": "bi-lightning-charge", "title": "Full‑Stack Development", "desc": "From system design to deployment: APIs, dashboards, and mobile‑ready UIs."},
+      {"icon": "bi-rocket", "title": "Performance & SEO", "desc": "Optimize Core Web Vitals (LCP/FCP/CLS) and technical SEO for growth."},
+      {"icon": "bi-shield-check", "title": "Security & DevOps", "desc": "Best practices, containerization, CI/CD, and cloud infrastructure."}
+    ],
+  
     "projects_title": "Selected Projects",
     "projects": [
-      {"name": "E-Commerce Platform", "desc": "Built with Laravel & React."},
-      {"name": "Ride-Hailing App", "desc": "Smart transport solution with live tracking."},
-      {"name": "CRM System", "desc": "Multi-tenant CRM with email & payment integration."}
+      {
+        "name": "E‑Commerce Platform",
+        "desc": "Scalable marketplace with payments, analytics, and admin.",
+        "stack": ["Laravel","React","MySQL"],
+        "image": "assets/img/p1.webp",
+        "link": "#",
+        "repo": "#"
+      },
+      {
+        "name": "Ride‑Hailing & Delivery",
+        "desc": "Real‑time tracking, driver incentives, and service points.",
+        "stack": ["Node.js","React Native","Redis"],
+        "image": "assets/img/p2.webp",
+        "link": "#",
+        "repo": "#"
+      },
+      {
+        "name": "Multi‑Tenant CRM",
+        "desc": "Email automation, payments, and granular roles.",
+        "stack": ["Laravel","Vue","PostgreSQL"],
+        "image": "assets/img/p3.webp",
+        "link": "#",
+        "repo": "#"
+      }
     ],
-    "contact_title": "Get in Touch",
-    "contact_text": "Feel free to reach out for collaborations or opportunities.",
-    "contact_btn": "Email Me"
-  }
   
+    "search_placeholder": "Search projects",
+  
+    "contact_title": "Get in Touch",
+    "contact_text": "Open to freelance and long‑term collaborations in MENA & remote.",
+    "contact_btn": "Email Me",
+    "cv_btn_text": "Download CV",
+    "footer_text": "© 2025 Mohamed Ashraf. All rights reserved."
+  }
