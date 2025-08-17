@@ -67,7 +67,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:image" content="https://web.elbayoumi.store/assets/img/og-cover.jpg">
-            
+
     <!-- Structured Data JSON-LD -->
     <script type="application/ld+json">
         {
@@ -175,12 +175,50 @@
         rel="stylesheet" />
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" />
-    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css" />
-    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <!-- 1) Keep only Bootstrap render-blocking (layout critical) -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- 2) Async-load icons & vendor CSS (non-critical) via preload + onload swap -->
+    <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    </noscript>
+
+    <link rel="preload" href="assets/vendor/boxicons/css/boxicons.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    </noscript>
+
+    <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+    </noscript>
+
+    <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    </noscript>
+
+    <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    </noscript>
+
+    <!-- 3) Your site CSS files (can be async if not critical above-the-fold) -->
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </noscript>
+
+    <link rel="preload" href="assets/css/code.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/code.css">
+    </noscript>
+
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
