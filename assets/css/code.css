@@ -1,129 +1,130 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 /* * By Jose Aguinaga * http://jjperezaguinaga.com */
 .body_code {
-    width: 65%;
-    /* margin: auto; */
-	 /* background: -webkit-radial-gradient(center, ellipse cover, #fff 0%, #f2efd9 100%); */
+  width: 65%;
+  /* margin: auto; */
+  /* background: -webkit-radial-gradient(center, ellipse cover, #fff 0%, #f2efd9 100%); */
 }
- @-webkit-keyframes rotate-right {
-	 from {
-		 -webkit-transform: rotate(0deg);
-	}
-	 to {
-		 -webkit-transform: rotate(360deg);
-	}
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
- @-webkit-keyframes rotate-left {
-	 from {
-		 -webkit-transform: rotate(0deg);
-	}
-	 to {
-		 -webkit-transform: rotate(-360deg);
-	}
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
 }
- @-webkit-keyframes hover {
-	 0% {
-		 -webkit-transform: translateY(0%);
-	}
-	 50% {
-		 -webkit-transform: translateY(5%);
-	}
-	 100% {
-		 -webkit-transform: translateY(0%);
-	}
+@-webkit-keyframes hover {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(5%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
- @-webkit-keyframes pull {
-	 0% {
-		 -webkit-transform: scaleY(1);
-	}
-	 40% {
-		 -webkit-transform: scaleY(1.01);
-	}
-	 60% {
-		 -webkit-transform: scaleY(0.99);
-	}
-	 80% {
-		 -webkit-transform: scaleY(1.01);
-	}
-	 100% {
-		 -webkit-transform: scaleY(0.99);
-	}
-	 80% {
-		 -webkit-transform: scaleY(1.01);
-	}
-	 100% {
-		 -webkit-transform: scaleY(1);
-	}
+@-webkit-keyframes pull {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+  40% {
+    -webkit-transform: scaleY(1.01);
+  }
+  60% {
+    -webkit-transform: scaleY(0.99);
+  }
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+  100% {
+    -webkit-transform: scaleY(0.99);
+  }
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
 }
- #airplane2, #airplane1 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-right 60s linear 0s infinite;
+#airplane2,
+#airplane1 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 60s linear 0s infinite;
 }
- #countryObjects {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-right 240s linear 0s infinite;
+#countryObjects {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 240s linear 0s infinite;
 }
- #floatingGlobe {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-left 360s linear 0s infinite;
+#floatingGlobe {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-left 360s linear 0s infinite;
 }
- #globe {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: hover 0s linear 0s infinite;
+#globe {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: hover 0s linear 0s infinite;
 }
- #windmill {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 331px 201px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-right 2s linear 0s infinite;
+#windmill {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 331px 201px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 2s linear 0s infinite;
 }
- #cloud1 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: hover 3s linear 1s infinite;
+#cloud1 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: hover 3s linear 1s infinite;
 }
- #cloud2 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: hover 3s linear 2s infinite;
+#cloud2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: hover 3s linear 2s infinite;
 }
- #cloud3 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: hover 3s linear 3s infinite;
+#cloud3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: hover 3s linear 3s infinite;
 }
- #circle1 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-right 12s linear 0s infinite;
+#circle1 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
 }
- #circle2 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-left 24s linear 0s infinite;
+#circle2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-left 24s linear 0s infinite;
 }
- #circle3 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-right 12s linear 0s infinite;
+#circle3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
 }
- #circle4 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-left 24s linear 0s infinite;
+#circle4 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-left 24s linear 0s infinite;
 }
- #circle5 {
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-transform-origin: 200px 200px;
-	 -webkit-transform: translate3d(0, 0, 0);
-	 -webkit-animation: rotate-right 12s linear 0s infinite;
+#circle5 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 /* ========== 1) Headings & emoji alignment ========== */
 .section-title h2,
@@ -134,9 +135,9 @@
 footer h3 {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;          /* space between emoji and text */
+  gap: 0.5rem; /* space between emoji and text */
   line-height: 1.2;
-  text-wrap: balance;  /* better line breaks on small screens (modern browsers) */
+  text-wrap: balance; /* better line breaks on small screens (modern browsers) */
 }
 
 /* Optional: shrink emojis a bit so they don't look oversized on mobile */
@@ -150,32 +151,40 @@ footer h3,
   /* scale text with viewport; keeps emojis in check too */
   font-size: clamp(1rem, 1.2vw + 0.9rem, 1.75rem);
 }
-footer h3 { font-size: clamp(1.1rem, 1.5vw + 1rem, 1.8rem); }
+footer h3 {
+  font-size: clamp(1.1rem, 1.5vw + 1rem, 1.8rem);
+}
 .services .icon-box h4,
-.portfolio .portfolio-info h4 { font-size: clamp(1rem, 1vw + .9rem, 1.25rem); }
+.portfolio .portfolio-info h4 {
+  font-size: clamp(1rem, 1vw + 0.9rem, 1.25rem);
+}
 
 /* ========== 2) Skills labels line-wrap nicely ========== */
 .skills .skill {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .5rem;
-  flex-wrap: wrap;       /* allow label to wrap on small screens */
+  gap: 0.5rem;
+  flex-wrap: wrap; /* allow label to wrap on small screens */
 }
 .skills .skill .val {
-  white-space: nowrap;   /* keep % intact */
+  white-space: nowrap; /* keep % intact */
 }
 
 /* Better progress bar height on small screens */
-.skills .progress-bar-wrap { height: 10px; }
+.skills .progress-bar-wrap {
+  height: 10px;
+}
 @media (max-width: 576px) {
-  .skills .progress-bar-wrap { height: 8px; }
+  .skills .progress-bar-wrap {
+    height: 8px;
+  }
 }
 
 /* ========== 3) Portfolio filters scroll on mobile ========== */
 #portfolio-flters {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
@@ -185,13 +194,13 @@ footer h3 { font-size: clamp(1.1rem, 1.5vw + 1rem, 1.8rem); }
 @media (max-width: 575.98px) {
   #portfolio-flters {
     flex-wrap: nowrap;
-    overflow-x: auto;          /* horizontal scroll if needed */
+    overflow-x: auto; /* horizontal scroll if needed */
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    padding-bottom: .25rem;
+    padding-bottom: 0.25rem;
   }
   #portfolio-flters li {
-    flex: 0 0 auto;            /* keep pill width minimal */
+    flex: 0 0 auto; /* keep pill width minimal */
   }
 }
 
@@ -207,7 +216,7 @@ footer h3 { font-size: clamp(1.1rem, 1.5vw + 1rem, 1.8rem); }
 .contact .info h4 {
   display: inline-flex;
   align-items: center;
-  gap: .4rem;
+  gap: 0.4rem;
 }
 .contact .social-links a {
   font-size: clamp(1.25rem, 1.5vw + 1rem, 1.75rem);
@@ -216,7 +225,7 @@ footer h3 { font-size: clamp(1.1rem, 1.5vw + 1rem, 1.8rem); }
 /* ========== 6) Footer social row wraps gracefully ========== */
 footer .social-links {
   flex-wrap: wrap;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
 }
 footer .social-links a {
   font-size: clamp(1.25rem, 1.5vw + 1rem, 1.75rem);
@@ -226,11 +235,50 @@ footer .social-links a {
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   line-height: 1.2;
 }
 
 /* ========== 8) Minor container padding on very small screens ========== */
 @media (max-width: 360px) {
-  .container { padding-left: 12px; padding-right: 12px; }
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* ===== About: content column responsive fix ===== */
+@media (max-width: 575.98px) {
+  /* Title under profile */
+  #about .content h3 {
+    font-size: 1.05rem; /* smaller title on mobile */
+    margin-bottom: 0.5rem; /* reduce spacing */
+    line-height: 1.3;
+  }
+
+  /* List items */
+  #about .content ul {
+    padding-left: 0;
+    margin-bottom: 0.75rem; /* tighten lists spacing */
+  }
+  #about .content ul li {
+    font-size: 0.9rem; /* smaller text */
+    line-height: 1.4;
+    margin-bottom: 0.4rem; /* reduce gap between items */
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+  }
+  #about .content ul li i {
+    font-size: 0.9rem; /* smaller chevron */
+  }
+
+  /* Resume buttons */
+  #about .content .mt-4 .btn {
+    font-size: 0.9rem; /* smaller text inside buttons */
+    padding: 0.5rem 0.85rem; /* reduce padding */
+  }
+  #about .content .mt-4 .btn + .btn {
+    margin-top: 0.5rem; /* stack vertically on mobile */
+    margin-left: 0; /* remove side spacing */
+  }
 }
