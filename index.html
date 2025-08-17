@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>محمد أشرف البيومي | Full-Stack Developer (Laravel, React, Node.js)</title>
-  <meta name="description" content="مطوّر برمجيات متكامل (Laravel, React, Node.js). بناء منصّات تجارة إلكترونية، REST APIs، ولوحات تحكم احترافية مع تحسين SEO وأداء Core Web Vitals." />
+  <title data-i18n="title">محمد أشرف البيومي | Full-Stack Developer (Laravel, React, Node.js)</title>
+  <meta name="description" data-i18n-attr="content:meta_description" content="مطوّر برمجيات متكامل (Laravel, React, Node.js). بناء منصّات تجارة إلكترونية، REST APIs، ولوحات تحكم احترافية مع تحسين SEO وأداء Core Web Vitals." />
   <link rel="canonical" href="https://elbayoumi.net/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0d6efd" />
@@ -14,22 +14,21 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ar_EG" />
-  <meta property="og:title" content="محمد أشرف البيومي | Full-Stack Developer" />
-  <meta property="og:description" content="منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO و Core Web Vitals." />
+  <meta property="og:locale" content="ar_EG" id="og-locale" />
+  <meta property="og:title" data-i18n-attr="content:og_title" content="محمد أشرف البيومي | Full-Stack Developer" />
+  <meta property="og:description" data-i18n-attr="content:og_description" content="منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO و Core Web Vitals." />
   <meta property="og:url" content="https://elbayoumi.net/" />
   <meta property="og:site_name" content="Mohamed Ashraf Elbayoumi" />
   <meta property="og:image" content="https://elbayoumi.net/og-cover.jpg" />
-  <meta property="og:image:alt" content="Mohamed Ashraf – Full-Stack Developer" />
+  <meta property="og:image:alt" data-i18n-attr="content:og_image_alt" content="Mohamed Ashraf – Full-Stack Developer" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="محمد أشرف البيومي | Full-Stack Developer" />
-  <meta name="twitter:description" content="منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO." />
+  <meta name="twitter:title" data-i18n-attr="content:tw_title" content="محمد أشرف البيومي | Full-Stack Developer" />
+  <meta name="twitter:description" data-i18n-attr="content:tw_description" content="منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO." />
   <meta name="twitter:image" content="https://elbayoumi.net/og-cover.jpg" />
 
-  <!-- Preconnect Hints (no Google Fonts to avoid blocking) -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- Preconnect Hints -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
   <!-- Bootstrap CSS (no custom CSS file) -->
@@ -40,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
 
-  <!-- Structured Data: Person + WebSite + Sitelinks Searchbox -->
+  <!-- Structured Data kept generic; language switching handled in-text -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,36 +56,12 @@
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://elbayoumi.net/",
-    "name": "Mohamed Ashraf Elbayoumi",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://elbayoumi.net/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://elbayoumi.net/"},
-      {"@type":"ListItem","position":2,"name":"الأعمال","item":"https://elbayoumi.net/#portfolio"}
-    ]
-  }
-  </script>
 </head>
 
 <body class="bg-light">
-  <!-- Skip link for accessibility -->
-  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-white rounded" href="#main">تخطي إلى المحتوى</a>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-white rounded" href="#main" data-i18n="skip">تخطي إلى المحتوى</a>
 
-  <!-- Header / Navbar -->
+  <!-- Header / Navbar with Language Toggle -->
   <header class="border-bottom bg-white sticky-top">
     <nav class="navbar navbar-expand-lg container" aria-label="Main navigation">
       <a class="navbar-brand fw-bold" href="#" aria-label="Home">
@@ -95,12 +70,15 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="nav" class="collapse navbar-collapse">
+      <div class="d-flex order-lg-2 ms-auto me-2">
+        <button id="langBtn" class="btn btn-sm btn-outline-primary">EN</button>
+      </div>
+      <div id="nav" class="collapse navbar-collapse order-lg-1">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">الأعمال</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">نبذة</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav_services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio" data-i18n="nav_portfolio">الأعمال</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">نبذة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">تواصل</a></li>
         </ul>
       </div>
     </nav>
@@ -112,21 +90,20 @@
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-7">
-            <h1 class="fw-bold mb-3">محمد أشرف البيومي — <span class="text-primary">Full‑Stack Developer</span></h1>
-            <p class="lead mb-4">أبني منصّات حديثة وسريعة باستخدام <strong>Laravel</strong> و<strong>React</strong> و<strong>Node.js</strong> مع معايير <abbr title="Core Web Vitals">CWV</abbr> و SEO متقدمة.
-            </p>
+            <h1 class="fw-bold mb-3" data-i18n="hero_title">محمد أشرف البيومي — <span class="text-primary">Full‑Stack Developer</span></h1>
+            <p class="lead mb-4" data-i18n="hero_sub">أبني منصّات حديثة وسريعة باستخدام <strong>Laravel</strong> و<strong>React</strong> و<strong>Node.js</strong> مع معايير <abbr title="Core Web Vitals">CWV</abbr> و SEO متقدمة.</p>
             <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-primary btn-lg" href="#contact">اطلب عرضًا</a>
-              <a class="btn btn-outline-primary btn-lg" href="#portfolio">شاهد الأعمال</a>
+              <a class="btn btn-primary btn-lg" href="#contact" data-i18n="cta_quote">اطلب عرضًا</a>
+              <a class="btn btn-outline-primary btn-lg" href="#portfolio" data-i18n="cta_work">شاهد الأعمال</a>
             </div>
             <ul class="list-inline mt-4 text-muted small">
-              <li class="list-inline-item">📍 المنصورة، مصر</li>
-              <li class="list-inline-item">🕒 +02 GMT</li>
-              <li class="list-inline-item">💼 فريلانسر / عقود</li>
+              <li class="list-inline-item" data-i18n="hero_loc">📍 المنصورة، مصر</li>
+              <li class="list-inline-item" data-i18n="hero_tz">🕒 +02 GMT</li>
+              <li class="list-inline-item" data-i18n="hero_role">💼 فريلانسر / عقود</li>
             </ul>
           </div>
           <div class="col-lg-5 text-center">
-            <img src="/assets/img/profile-hero.webp" class="img-fluid rounded shadow-sm" alt="صورة مطوّر برمجيات" width="480" height="360" loading="lazy" decoding="async" />
+            <img src="/assets/img/profile-hero.webp" class="img-fluid rounded shadow-sm" alt="صورة مطوّر برمجيات" width="480" height="360" loading="lazy" decoding="async" data-i18n-attr="alt:hero_img_alt" />
           </div>
         </div>
       </div>
@@ -136,31 +113,31 @@
     <section id="services" class="py-5 bg-light">
       <div class="container">
         <header class="mb-4">
-          <h2 class="h1">الخدمات</h2>
-          <p class="text-muted mb-0">حلول كاملة من التحليل إلى الإنتاج — بدون ملف CSS مخصص، كل شيء عبر Bootstrap.</p>
+          <h2 class="h1" data-i18n="services_h">الخدمات</h2>
+          <p class="text-muted mb-0" data-i18n="services_p">حلول كاملة من التحليل إلى الإنتاج — بدون ملف CSS مخصص، كل شيء عبر Bootstrap.</p>
         </header>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h4">منصّات تجارة إلكترونية</h3>
-                <p class="mb-0">سلة، مدفوعات، شحن، لوحات تحكم، تقارير. أداء عالي وتجربة سلسة.</p>
+                <h3 class="h4" data-i18n="svc_ecom_h">منصّات تجارة إلكترونية</h3>
+                <p class="mb-0" data-i18n="svc_ecom_p">سلة، مدفوعات، شحن، لوحات تحكم، تقارير. أداء عالي وتجربة سلسة.</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h4">APIs و Microservices</h3>
-                <p class="mb-0">REST/JSON، توثيق، مصادقة JWT/OAuth2، اختبارات وتتبّع.</p>
+                <h3 class="h4" data-i18n="svc_api_h">APIs و Microservices</h3>
+                <p class="mb-0" data-i18n="svc_api_p">REST/JSON، توثيق، مصادقة JWT/OAuth2، اختبارات وتتبّع.</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h4">لوحات تحكم React</h3>
-                <p class="mb-0">SPAs مع جداول وتكاملات ورسوم — مبنية على أفضل ممارسات SEO.</p>
+                <h3 class="h4" data-i18n="svc_dash_h">لوحات تحكم React</h3>
+                <p class="mb-0" data-i18n="svc_dash_p">SPAs مع جداول وتكاملات ورسوم — مبنية على أفضل ممارسات SEO.</p>
               </div>
             </div>
           </div>
@@ -172,37 +149,37 @@
     <section id="portfolio" class="py-5 bg-white">
       <div class="container">
         <header class="mb-4">
-          <h2 class="h1">الأعمال</h2>
-          <p class="text-muted mb-0">مختارات من أعمال حقيقية — أنظمة كاملة وواجهات وواجهات برمجية.</p>
+          <h2 class="h1" data-i18n="portfolio_h">الأعمال</h2>
+          <p class="text-muted mb-0" data-i18n="portfolio_p">مختارات من أعمال حقيقية — أنظمة كاملة وواجهات وواجهات برمجية.</p>
         </header>
         <div class="row g-4">
           <article class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img class="card-img-top" src="/assets/img/portfolio/ecommerce.webp" alt="منصة تجارة إلكترونية" width="640" height="420" loading="lazy" decoding="async">
+              <img class="card-img-top" src="/assets/img/portfolio/ecommerce.webp" alt="منصة تجارة إلكترونية" width="640" height="420" loading="lazy" decoding="async" data-i18n-attr="alt:pf1_img_alt">
               <div class="card-body">
-                <h3 class="h4">منصة E‑commerce</h3>
-                <p>Laravel + MySQL + مدفوعات + إدارة منتجات + لوحة تحكم.</p>
-                <a class="btn btn-sm btn-outline-primary" href="https://github.com/elbayoumi/laravel-days" target="_blank" rel="noopener">كود المصدر</a>
+                <h3 class="h4" data-i18n="pf1_h">منصة E‑commerce</h3>
+                <p data-i18n="pf1_p">Laravel + MySQL + مدفوعات + إدارة منتجات + لوحة تحكم.</p>
+                <a class="btn btn-sm btn-outline-primary" href="https://github.com/elbayoumi/laravel-days" target="_blank" rel="noopener" data-i18n="pf_code">كود المصدر</a>
               </div>
             </div>
           </article>
 
           <article class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img class="card-img-top" src="/assets/img/portfolio/pos.webp" alt="نظام نقاط بيع" width="640" height="420" loading="lazy" decoding="async">
+              <img class="card-img-top" src="/assets/img/portfolio/pos.webp" alt="نظام نقاط بيع" width="640" height="420" loading="lazy" decoding="async" data-i18n-attr="alt:pf2_img_alt">
               <div class="card-body">
-                <h3 class="h4">POS & Inventory</h3>
-                <p>مخزون، فواتير، تقارير مبيعات — Laravel مخصّص.</p>
+                <h3 class="h4" data-i18n="pf2_h">POS & Inventory</h3>
+                <p data-i18n="pf2_p">مخزون، فواتير، تقارير مبيعات — Laravel مخصّص.</p>
               </div>
             </div>
           </article>
 
           <article class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img class="card-img-top" src="/assets/img/portfolio/booking.webp" alt="نظام حجز ومواعيد" width="640" height="420" loading="lazy" decoding="async">
+              <img class="card-img-top" src="/assets/img/portfolio/booking.webp" alt="نظام حجز ومواعيد" width="640" height="420" loading="lazy" decoding="async" data-i18n-attr="alt:pf3_img_alt">
               <div class="card-body">
-                <h3 class="h4">حجز و مواعيد</h3>
-                <p>تنبيهات بريد/SMS + تقويم + صلاحيات — أداء محسّن.</p>
+                <h3 class="h4" data-i18n="pf3_h">حجز و مواعيد</h3>
+                <p data-i18n="pf3_p">تنبيهات بريد/SMS + تقويم + صلاحيات — أداء محسّن.</p>
               </div>
             </div>
           </article>
@@ -214,17 +191,17 @@
     <section id="about" class="py-5 bg-light">
       <div class="container">
         <header class="mb-4">
-          <h2 class="h1">نبذة</h2>
+          <h2 class="h1" data-i18n="about_h">نبذة</h2>
         </header>
         <div class="row g-4 align-items-center">
           <div class="col-lg-6">
-            <p class="mb-2">أنا مطوّر ويب متكامل بخبرة في بناء أنظمة إنتاجية وسريعة، مع اهتمام خاص بقابلية الوصول وSEO.</p>
+            <p class="mb-2" data-i18n="about_p1">أنا مطوّر ويب متكامل بخبرة في بناء أنظمة إنتاجية وسريعة، مع اهتمام خاص بقابلية الوصول وSEO.</p>
             <ul class="mb-3">
               <li>Laravel, PHP, MySQL, Redis</li>
               <li>React, Node.js, TypeScript</li>
-              <li>Docker, CI/CD, مراقبة الأداء</li>
+              <li data-i18n="about_list3">Docker, CI/CD, مراقبة الأداء</li>
             </ul>
-            <p class="mb-0 text-muted">أركز على <strong>وقت العرض الأول LCP</strong> وتقليل <strong>الطلبات الحاجبة للعرض</strong> لتحقيق نتائج Lighthouse ممتازة.</p>
+            <p class="mb-0 text-muted" data-i18n="about_p2">أركز على <strong>وقت العرض الأول LCP</strong> وتقليل <strong>الطلبات الحاجبة للعرض</strong> لتحقيق نتائج Lighthouse ممتازة.</p>
           </div>
           <div class="col-lg-6">
             <div class="ratio ratio-16x9 rounded overflow-hidden">
@@ -239,33 +216,33 @@
     <section id="contact" class="py-5 bg-white">
       <div class="container">
         <header class="mb-4">
-          <h2 class="h1">تواصل</h2>
-          <p class="text-muted mb-0">هل لديك مشروع؟ أرسل رسالة مختصرة وسأتواصل خلال 24 ساعة.</p>
+          <h2 class="h1" data-i18n="contact_h">تواصل</h2>
+          <p class="text-muted mb-0" data-i18n="contact_p">هل لديك مشروع؟ أرسل رسالة مختصرة وسأتواصل خلال 24 ساعة.</p>
         </header>
         <div class="row g-4">
           <div class="col-lg-6">
             <form class="needs-validation" novalidate method="post" action="/contact">
               <div class="mb-3">
-                <label for="name" class="form-label">الاسم</label>
+                <label for="name" class="form-label" data-i18n="form_name">الاسم</label>
                 <input type="text" class="form-control" id="name" name="name" required>
-                <div class="invalid-feedback">فضلاً أدخل الاسم.</div>
+                <div class="invalid-feedback" data-i18n="form_name_err">فضلاً أدخل الاسم.</div>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <label for="email" class="form-label" data-i18n="form_email">البريد الإلكتروني</label>
                 <input type="email" class="form-control" id="email" name="email" inputmode="email" required>
-                <div class="invalid-feedback">بريد غير صالح.</div>
+                <div class="invalid-feedback" data-i18n="form_email_err">بريد غير صالح.</div>
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">رسالتك</label>
+                <label for="message" class="form-label" data-i18n="form_msg">رسالتك</label>
                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                <div class="invalid-feedback">فضلاً أكتب الرسالة.</div>
+                <div class="invalid-feedback" data-i18n="form_msg_err">فضلاً أكتب الرسالة.</div>
               </div>
-              <button type="submit" class="btn btn-primary">إرسال</button>
+              <button type="submit" class="btn btn-primary" data-i18n="form_send">إرسال</button>
             </form>
           </div>
           <div class="col-lg-6">
             <div class="p-3 border rounded bg-light h-100">
-              <h3 class="h5">معلومات سريعة</h3>
+              <h3 class="h5" data-i18n="quick_h">معلومات سريعة</h3>
               <ul class="list-unstyled mb-0">
                 <li class="mb-2">📧 <a href="mailto:mohamed@elbayoumi.net">mohamed@elbayoumi.net</a></li>
                 <li class="mb-2">🔗 <a href="https://github.com/elbayoumi" target="_blank" rel="noopener">GitHub</a></li>
@@ -282,8 +259,8 @@
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
       <small class="text-muted">© <span id="y"></span> Mohamed Ashraf Elbayoumi</small>
       <nav aria-label="Footer">
-        <a class="text-muted me-3" href="#privacy">الخصوصية</a>
-        <a class="text-muted" href="#terms">الشروط</a>
+        <a class="text-muted me-3" href="#privacy" data-i18n="privacy">الخصوصية</a>
+        <a class="text-muted" href="#terms" data-i18n="terms">الشروط</a>
       </nav>
     </div>
   </footer>
@@ -291,10 +268,122 @@
   <!-- Bootstrap JS (deferred) -->
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
-  <!-- Simple form validation + year fill -->
+  <!-- i18n & form validation -->
   <script>
     (function() {
       'use strict';
+
+      const STR = {
+        ar: {
+          lang: 'ar', dir: 'rtl', btn: 'EN', ogLocale: 'ar_EG',
+          title: 'محمد أشرف البيومي | Full-Stack Developer (Laravel, React, Node.js)',
+          meta_description: 'مطوّر برمجيات متكامل (Laravel, React, Node.js). بناء منصّات تجارة إلكترونية، REST APIs، ولوحات تحكم احترافية مع تحسين SEO وأداء Core Web Vitals.',
+          og_title: 'محمد أشرف البيومي | Full-Stack Developer',
+          og_description: 'منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO و Core Web Vitals.',
+          og_image_alt: 'Mohamed Ashraf – Full-Stack Developer',
+          tw_title: 'محمد أشرف البيومي | Full-Stack Developer',
+          tw_description: 'منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO.',
+          skip: 'تخطي إلى المحتوى',
+          nav_services: 'الخدمات', nav_portfolio: 'الأعمال', nav_about: 'نبذة', nav_contact: 'تواصل',
+          hero_title: 'محمد أشرف البيومي — <span class="text-primary">Full‑Stack Developer</span>',
+          hero_sub: 'أبني منصّات حديثة وسريعة باستخدام <strong>Laravel</strong> و<strong>React</strong> و<strong>Node.js</strong> مع معايير <abbr title="Core Web Vitals">CWV</abbr> و SEO متقدمة.',
+          cta_quote: 'اطلب عرضًا', cta_work: 'شاهد الأعمال',
+          hero_loc: '📍 المنصورة، مصر', hero_tz: '🕒 +02 GMT', hero_role: '💼 فريلانسر / عقود', hero_img_alt: 'صورة مطوّر برمجيات',
+          services_h: 'الخدمات', services_p: 'حلول كاملة من التحليل إلى الإنتاج — بدون ملف CSS مخصص، كل شيء عبر Bootstrap.',
+          svc_ecom_h: 'منصّات تجارة إلكترونية', svc_ecom_p: 'سلة، مدفوعات، شحن، لوحات تحكم، تقارير. أداء عالي وتجربة سلسة.',
+          svc_api_h: 'APIs و Microservices', svc_api_p: 'REST/JSON، توثيق، مصادقة JWT/OAuth2، اختبارات وتتبّع.',
+          svc_dash_h: 'لوحات تحكم React', svc_dash_p: 'SPAs مع جداول وتكاملات ورسوم — مبنية على أفضل ممارسات SEO.',
+          portfolio_h: 'الأعمال', portfolio_p: 'مختارات من أعمال حقيقية — أنظمة كاملة وواجهات وواجهات برمجية.',
+          pf1_h: 'منصة E‑commerce', pf1_p: 'Laravel + MySQL + مدفوعات + إدارة منتجات + لوحة تحكم.', pf1_img_alt: 'منصة تجارة إلكترونية',
+          pf2_h: 'POS & Inventory', pf2_p: 'مخزون، فواتير، تقارير مبيعات — Laravel مخصّص.', pf2_img_alt: 'نظام نقاط بيع',
+          pf3_h: 'حجز و مواعيد', pf3_p: 'تنبيهات بريد/SMS + تقويم + صلاحيات — أداء محسّن.', pf3_img_alt: 'نظام حجز ومواعيد',
+          about_h: 'نبذة', about_p1: 'أنا مطوّر ويب متكامل بخبرة في بناء أنظمة إنتاجية وسريعة، مع اهتمام خاص بقابلية الوصول وSEO.', about_list3: 'Docker, CI/CD, مراقبة الأداء', about_p2: 'أركز على <strong>وقت العرض الأول LCP</strong> وتقليل <strong>الطلبات الحاجبة للعرض</strong> لتحقيق نتائج Lighthouse ممتازة.',
+          contact_h: 'تواصل', contact_p: 'هل لديك مشروع؟ أرسل رسالة مختصرة وسأتواصل خلال 24 ساعة.',
+          form_name: 'الاسم', form_name_err: 'فضلاً أدخل الاسم.',
+          form_email: 'البريد الإلكتروني', form_email_err: 'بريد غير صالح.',
+          form_msg: 'رسالتك', form_msg_err: 'فضلاً أكتب الرسالة.',
+          form_send: 'إرسال',
+          quick_h: 'معلومات سريعة',
+          privacy: 'الخصوصية', terms: 'الشروط'
+        },
+        en: {
+          lang: 'en', dir: 'ltr', btn: 'AR', ogLocale: 'en_US',
+          title: 'Mohamed Ashraf Elbayoumi | Full-Stack Developer (Laravel, React, Node.js)',
+          meta_description: 'Full‑stack developer (Laravel, React, Node.js). E‑commerce platforms, REST APIs, and admin dashboards with advanced SEO & Core Web Vitals.',
+          og_title: 'Mohamed Ashraf Elbayoumi | Full-Stack Developer',
+          og_description: 'Fast, secure web platforms using Laravel, React, Node.js. Strong SEO & Core Web Vitals expertise.',
+          og_image_alt: 'Mohamed Ashraf – Full-Stack Developer',
+          tw_title: 'Mohamed Ashraf Elbayoumi | Full-Stack Developer',
+          tw_description: 'Fast, secure web platforms using Laravel, React, Node.js. SEO-focused.',
+          skip: 'Skip to content',
+          nav_services: 'Services', nav_portfolio: 'Portfolio', nav_about: 'About', nav_contact: 'Contact',
+          hero_title: 'Mohamed Ashraf Elbayoumi — <span class="text-primary">Full‑Stack Developer</span>',
+          hero_sub: 'I build fast, modern platforms with <strong>Laravel</strong>, <strong>React</strong> and <strong>Node.js</strong> with strong <abbr title="Core Web Vitals">CWV</abbr> and SEO.',
+          cta_quote: 'Get a quote', cta_work: 'View work',
+          hero_loc: '📍 Mansoura, Egypt', hero_tz: '🕒 GMT +02', hero_role: '💼 Freelancer / Contracts', hero_img_alt: 'Software engineer portrait',
+          services_h: 'Services', services_p: 'End‑to‑end delivery — no custom CSS, Bootstrap utilities only.',
+          svc_ecom_h: 'E‑commerce Platforms', svc_ecom_p: 'Cart, payments, shipping, dashboards, reports. High performance.',
+          svc_api_h: 'APIs & Microservices', svc_api_p: 'REST/JSON, docs, JWT/OAuth2, tests & tracing.',
+          svc_dash_h: 'React Dashboards', svc_dash_p: 'SPAs with tables, charts, integrations — SEO best practices.',
+          portfolio_h: 'Portfolio', portfolio_p: 'Selected real‑world work — full systems, UI, and APIs.',
+          pf1_h: 'E‑commerce Platform', pf1_p: 'Laravel + MySQL + payments + products + admin.', pf1_img_alt: 'E‑commerce platform',
+          pf2_h: 'POS & Inventory', pf2_p: 'Stock, invoices, sales reports — custom Laravel.', pf2_img_alt: 'Point of sale system',
+          pf3_h: 'Booking & Appointments', pf3_p: 'Email/SMS alerts + calendar + roles — optimized performance.', pf3_img_alt: 'Booking system',
+          about_h: 'About', about_p1: 'Full‑stack web developer focused on performance, accessibility, and SEO.', about_list3: 'Docker, CI/CD, performance monitoring', about_p2: 'I optimize <strong>LCP</strong> and reduce <strong>render‑blocking requests</strong> for great Lighthouse scores.',
+          contact_h: 'Contact', contact_p: 'Have a project? Send a short message and I will reply within 24h.',
+          form_name: 'Name', form_name_err: 'Please enter your name.',
+          form_email: 'Email', form_email_err: 'Invalid email.',
+          form_msg: 'Your message', form_msg_err: 'Please write a message.',
+          form_send: 'Send',
+          quick_h: 'Quick Info',
+          privacy: 'Privacy', terms: 'Terms'
+        }
+      };
+
+      function applyI18n(dict) {
+        // Text content
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) el.innerHTML = dict[key];
+        });
+        // Attributes
+        document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+          const spec = el.getAttribute('data-i18n-attr');
+          // format: "attr:key"
+          const [attr, key] = spec.split(':');
+          if (dict[key] !== undefined) el.setAttribute(attr, dict[key]);
+        });
+        // Meta title & others
+        document.title = dict.title;
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.setAttribute('content', dict.meta_description);
+        const ogLocale = document.getElementById('og-locale');
+        if (ogLocale) ogLocale.setAttribute('content', dict.ogLocale);
+      }
+
+      // Language switch
+      const btn = document.getElementById('langBtn');
+      const saved = (new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang') || 'ar');
+      setLang(saved);
+
+      btn.addEventListener('click', () => {
+        const next = document.documentElement.lang === 'ar' ? 'en' : 'ar';
+        setLang(next);
+        try { localStorage.setItem('lang', next); } catch(e){}
+        const url = new URL(location.href);
+        url.searchParams.set('lang', next);
+        history.replaceState({}, '', url);
+      });
+
+      function setLang(code){
+        const dict = STR[code] || STR.ar;
+        document.documentElement.lang = dict.lang;
+        document.documentElement.dir  = dict.dir;
+        btn.textContent = dict.btn;
+        applyI18n(dict);
+      }
+
+      // Simple form validation + year fill
       const forms = document.querySelectorAll('.needs-validation');
       Array.prototype.slice.call(forms).forEach(function(form) {
         form.addEventListener('submit', function(event) {
