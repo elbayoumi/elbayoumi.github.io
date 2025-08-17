@@ -190,13 +190,25 @@
         rel="stylesheet">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/code.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/code.css">
+    </noscript>
     <script>
         if (window.location.hostname !== 'web.elbayoumi.store') {
             location.replace('https://web.elbayoumi.store');
         }
     </script>
+    <script>
+        function loadCSS(href) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l); }
+        // Icons: حمّل واحد بس اللي أنت محتاجه فعلاً
+        loadCSS('assets/vendor/bootstrap-icons/bootstrap-icons.css'); // أو بدّله بـ boxicons لو بتستخدمها
+
+        if (document.querySelector('[data-gallery]')) loadCSS('assets/vendor/glightbox/css/glightbox.min.css');
+        if (document.querySelector('.swiper')) loadCSS('assets/vendor/swiper/swiper-bundle.min.css');
+        if (document.querySelector('[data-aos]')) loadCSS('assets/vendor/aos/aos.css');
+    </script>
+
 </head>
 
 
