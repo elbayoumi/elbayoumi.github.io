@@ -273,72 +273,8 @@
     (function() {
       'use strict';
 
-      const STR = {
-        ar: {
-          lang: 'ar', dir: 'rtl', btn: 'EN', ogLocale: 'ar_EG',
-          title: 'محمد أشرف البيومي | Full-Stack Developer (Laravel, React, Node.js)',
-          meta_description: 'مطوّر برمجيات متكامل (Laravel, React, Node.js). بناء منصّات تجارة إلكترونية، REST APIs، ولوحات تحكم احترافية مع تحسين SEO وأداء Core Web Vitals.',
-          og_title: 'محمد أشرف البيومي | Full-Stack Developer',
-          og_description: 'منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO و Core Web Vitals.',
-          og_image_alt: 'Mohamed Ashraf – Full-Stack Developer',
-          tw_title: 'محمد أشرف البيومي | Full-Stack Developer',
-          tw_description: 'منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO.',
-          skip: 'تخطي إلى المحتوى',
-          nav_services: 'الخدمات', nav_portfolio: 'الأعمال', nav_about: 'نبذة', nav_contact: 'تواصل',
-          hero_title: 'محمد أشرف البيومي — <span class="text-primary">Full‑Stack Developer</span>',
-          hero_sub: 'أبني منصّات حديثة وسريعة باستخدام <strong>Laravel</strong> و<strong>React</strong> و<strong>Node.js</strong> مع معايير <abbr title="Core Web Vitals">CWV</abbr> و SEO متقدمة.',
-          cta_quote: 'اطلب عرضًا', cta_work: 'شاهد الأعمال',
-          hero_loc: '📍 المنصورة، مصر', hero_tz: '🕒 +02 GMT', hero_role: '💼 فريلانسر / عقود', hero_img_alt: 'صورة مطوّر برمجيات',
-          services_h: 'الخدمات', services_p: 'حلول كاملة من التحليل إلى الإنتاج — بدون ملف CSS مخصص، كل شيء عبر Bootstrap.',
-          svc_ecom_h: 'منصّات تجارة إلكترونية', svc_ecom_p: 'سلة، مدفوعات، شحن، لوحات تحكم، تقارير. أداء عالي وتجربة سلسة.',
-          svc_api_h: 'APIs و Microservices', svc_api_p: 'REST/JSON، توثيق، مصادقة JWT/OAuth2، اختبارات وتتبّع.',
-          svc_dash_h: 'لوحات تحكم React', svc_dash_p: 'SPAs مع جداول وتكاملات ورسوم — مبنية على أفضل ممارسات SEO.',
-          portfolio_h: 'الأعمال', portfolio_p: 'مختارات من أعمال حقيقية — أنظمة كاملة وواجهات وواجهات برمجية.',
-          pf1_h: 'منصة E‑commerce', pf1_p: 'Laravel + MySQL + مدفوعات + إدارة منتجات + لوحة تحكم.', pf1_img_alt: 'منصة تجارة إلكترونية',
-          pf2_h: 'POS & Inventory', pf2_p: 'مخزون، فواتير، تقارير مبيعات — Laravel مخصّص.', pf2_img_alt: 'نظام نقاط بيع',
-          pf3_h: 'حجز و مواعيد', pf3_p: 'تنبيهات بريد/SMS + تقويم + صلاحيات — أداء محسّن.', pf3_img_alt: 'نظام حجز ومواعيد',
-          about_h: 'نبذة', about_p1: 'أنا مطوّر ويب متكامل بخبرة في بناء أنظمة إنتاجية وسريعة، مع اهتمام خاص بقابلية الوصول وSEO.', about_list3: 'Docker, CI/CD, مراقبة الأداء', about_p2: 'أركز على <strong>وقت العرض الأول LCP</strong> وتقليل <strong>الطلبات الحاجبة للعرض</strong> لتحقيق نتائج Lighthouse ممتازة.',
-          contact_h: 'تواصل', contact_p: 'هل لديك مشروع؟ أرسل رسالة مختصرة وسأتواصل خلال 24 ساعة.',
-          form_name: 'الاسم', form_name_err: 'فضلاً أدخل الاسم.',
-          form_email: 'البريد الإلكتروني', form_email_err: 'بريد غير صالح.',
-          form_msg: 'رسالتك', form_msg_err: 'فضلاً أكتب الرسالة.',
-          form_send: 'إرسال',
-          quick_h: 'معلومات سريعة',
-          privacy: 'الخصوصية', terms: 'الشروط'
-        },
-        en: {
-          lang: 'en', dir: 'ltr', btn: 'AR', ogLocale: 'en_US',
-          title: 'Mohamed Ashraf Elbayoumi | Full-Stack Developer (Laravel, React, Node.js)',
-          meta_description: 'Full‑stack developer (Laravel, React, Node.js). E‑commerce platforms, REST APIs, and admin dashboards with advanced SEO & Core Web Vitals.',
-          og_title: 'Mohamed Ashraf Elbayoumi | Full-Stack Developer',
-          og_description: 'Fast, secure web platforms using Laravel, React, Node.js. Strong SEO & Core Web Vitals expertise.',
-          og_image_alt: 'Mohamed Ashraf – Full-Stack Developer',
-          tw_title: 'Mohamed Ashraf Elbayoumi | Full-Stack Developer',
-          tw_description: 'Fast, secure web platforms using Laravel, React, Node.js. SEO-focused.',
-          skip: 'Skip to content',
-          nav_services: 'Services', nav_portfolio: 'Portfolio', nav_about: 'About', nav_contact: 'Contact',
-          hero_title: 'Mohamed Ashraf Elbayoumi — <span class="text-primary">Full‑Stack Developer</span>',
-          hero_sub: 'I build fast, modern platforms with <strong>Laravel</strong>, <strong>React</strong> and <strong>Node.js</strong> with strong <abbr title="Core Web Vitals">CWV</abbr> and SEO.',
-          cta_quote: 'Get a quote', cta_work: 'View work',
-          hero_loc: '📍 Mansoura, Egypt', hero_tz: '🕒 GMT +02', hero_role: '💼 Freelancer / Contracts', hero_img_alt: 'Software engineer portrait',
-          services_h: 'Services', services_p: 'End‑to‑end delivery — no custom CSS, Bootstrap utilities only.',
-          svc_ecom_h: 'E‑commerce Platforms', svc_ecom_p: 'Cart, payments, shipping, dashboards, reports. High performance.',
-          svc_api_h: 'APIs & Microservices', svc_api_p: 'REST/JSON, docs, JWT/OAuth2, tests & tracing.',
-          svc_dash_h: 'React Dashboards', svc_dash_p: 'SPAs with tables, charts, integrations — SEO best practices.',
-          portfolio_h: 'Portfolio', portfolio_p: 'Selected real‑world work — full systems, UI, and APIs.',
-          pf1_h: 'E‑commerce Platform', pf1_p: 'Laravel + MySQL + payments + products + admin.', pf1_img_alt: 'E‑commerce platform',
-          pf2_h: 'POS & Inventory', pf2_p: 'Stock, invoices, sales reports — custom Laravel.', pf2_img_alt: 'Point of sale system',
-          pf3_h: 'Booking & Appointments', pf3_p: 'Email/SMS alerts + calendar + roles — optimized performance.', pf3_img_alt: 'Booking system',
-          about_h: 'About', about_p1: 'Full‑stack web developer focused on performance, accessibility, and SEO.', about_list3: 'Docker, CI/CD, performance monitoring', about_p2: 'I optimize <strong>LCP</strong> and reduce <strong>render‑blocking requests</strong> for great Lighthouse scores.',
-          contact_h: 'Contact', contact_p: 'Have a project? Send a short message and I will reply within 24h.',
-          form_name: 'Name', form_name_err: 'Please enter your name.',
-          form_email: 'Email', form_email_err: 'Invalid email.',
-          form_msg: 'Your message', form_msg_err: 'Please write a message.',
-          form_send: 'Send',
-          quick_h: 'Quick Info',
-          privacy: 'Privacy', terms: 'Terms'
-        }
-      };
+      // --- i18n dictionaries will be fetched from external JSON files ---
+const STR = null; // keep name reserved but unused
 
       function applyI18n(dict) {
         // Text content
@@ -375,12 +311,55 @@
         history.replaceState({}, '', url);
       });
 
-      function setLang(code){
-        const dict = STR[code] || STR.ar;
+      async function setLang(code){
+        const dict = await loadDict(code);
         document.documentElement.lang = dict.lang;
         document.documentElement.dir  = dict.dir;
         btn.textContent = dict.btn;
         applyI18n(dict);
+      }
+
+      async function loadDict(code){
+        const url = `/i18n/${code}.json`;
+        try {
+          const res = await fetch(url, {cache: 'no-store'});
+          if(!res.ok) throw new Error('i18n fetch failed');
+          return await res.json();
+        } catch(e){
+          // Fallback to Arabic inline minimal dict if file missing
+          return {
+            lang:'ar',dir:'rtl',btn:'EN',ogLocale:'ar_EG',
+            title:'محمد أشرف البيومي | Full-Stack Developer (Laravel, React, Node.js)',
+            meta_description:'مطوّر برمجيات متكامل (Laravel, React, Node.js). بناء منصّات تجارة إلكترونية، REST APIs، ولوحات تحكم احترافية مع تحسين SEO وأداء Core Web Vitals.',
+            og_title:'محمد أشرف البيومي | Full-Stack Developer',
+            og_description:'منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO و Core Web Vitals.',
+            og_image_alt:'Mohamed Ashraf – Full-Stack Developer',
+            tw_title:'محمد أشرف البيومي | Full-Stack Developer',
+            tw_description:'منصّات ويب سريعة وآمنة باستخدام Laravel, React, Node.js. خبرة في SEO.',
+            skip:'تخطي إلى المحتوى',
+            nav_services:'الخدمات',nav_portfolio:'الأعمال',nav_about:'نبذة',nav_contact:'تواصل',
+            hero_title:'محمد أشرف البيومي — <span class="text-primary">Full‑Stack Developer</span>',
+            hero_sub:'أبني منصّات حديثة وسريعة باستخدام <strong>Laravel</strong> و<strong>React</strong> و<strong>Node.js</strong> مع معايير <abbr title="Core Web Vitals">CWV</abbr> و SEO متقدمة.',
+            cta_quote:'اطلب عرضًا',cta_work:'شاهد الأعمال',
+            hero_loc:'📍 المنصورة، مصر',hero_tz:'🕒 +02 GMT',hero_role:'💼 فريلانسر / عقود',hero_img_alt:'صورة مطوّر برمجيات',
+            services_h:'الخدمات',services_p:'حلول كاملة من التحليل إلى الإنتاج — بدون ملف CSS مخصص، كل شيء عبر Bootstrap.',
+            svc_ecom_h:'منصّات تجارة إلكترونية',svc_ecom_p:'سلة، مدفوعات، شحن، لوحات تحكم، تقارير. أداء عالي وتجربة سلسة.',
+            svc_api_h:'APIs و Microservices',svc_api_p:'REST/JSON، توثيق، مصادقة JWT/OAuth2، اختبارات وتتبّع.',
+            svc_dash_h:'لوحات تحكم React',svc_dash_p:'SPAs مع جداول وتكاملات ورسوم — مبنية على أفضل ممارسات SEO.',
+            portfolio_h:'الأعمال',portfolio_p:'مختارات من أعمال حقيقية — أنظمة كاملة وواجهات وواجهات برمجية.',
+            pf1_h:'منصة E‑commerce',pf1_p:'Laravel + MySQL + مدفوعات + إدارة منتجات + لوحة تحكم.',pf1_img_alt:'منصة تجارة إلكترونية',
+            pf2_h:'POS & Inventory',pf2_p:'مخزون، فواتير، تقارير مبيعات — Laravel مخصّص.',pf2_img_alt:'نظام نقاط بيع',
+            pf3_h:'حجز و مواعيد',pf3_p:'تنبيهات بريد/SMS + تقويم + صلاحيات — أداء محسّن.',pf3_img_alt:'نظام حجز ومواعيد',
+            about_h:'نبذة',about_p1:'أنا مطوّر ويب متكامل بخبرة في بناء أنظمة إنتاجية وسريعة، مع اهتمام خاص بقابلية الوصول وSEO.',about_list3:'Docker, CI/CD, مراقبة الأداء',about_p2:'أركز على <strong>وقت العرض الأول LCP</strong> وتقليل <strong>الطلبات الحاجبة للعرض</strong> لتحقيق نتائج Lighthouse ممتازة.',
+            contact_h:'تواصل',contact_p:'هل لديك مشروع؟ أرسل رسالة مختصرة وسأتواصل خلال 24 ساعة.',
+            form_name:'الاسم',form_name_err:'فضلاً أدخل الاسم.',
+            form_email:'البريد الإلكتروني',form_email_err:'بريد غير صالح.',
+            form_msg:'رسالتك',form_msg_err:'فضلاً أكتب الرسالة.',
+            form_send:'إرسال',
+            quick_h:'معلومات سريعة',
+            privacy:'الخصوصية',terms:'الشروط'
+          };
+        }
       }
 
       // Simple form validation + year fill
