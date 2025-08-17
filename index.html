@@ -115,21 +115,51 @@
   <!-- Navbar -->
   <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
     <div class="container">
+      <!-- Brand -->
       <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
         <span class="bi bi-code-slash fs-4"></span>
         <span id="logo">Software Engineer</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+  
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+  
+      <!-- Nav Links -->
       <nav id="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#about" id="nav_about"></a></li>
           <li class="nav-item"><a class="nav-link" href="#projects" id="nav_projects"></a></li>
           <li class="nav-item"><a class="nav-link" href="#services" id="nav_services"></a></li>
           <li class="nav-item"><a class="nav-link" href="#contact" id="nav_contact"></a></li>
+  
+          <!-- Language Switcher -->
           <li class="nav-item ms-lg-3">
-            <select class="form-select form-select-sm" id="langSwitcher" aria-label="Language switcher">
+            <!-- Segmented toggle for desktop -->
+            <div id="langSegment"
+                 class="lang-segment d-none d-lg-inline-grid"
+                 role="radiogroup"
+                 aria-label="Language switcher"
+                 data-active="en">
+              <input type="radio" class="lang-opt" name="lang" id="lang-en" value="en" checked />
+              <label for="lang-en" data-lang="en" class="mb-0">
+                <span class="flag" aria-hidden="true">🇺🇸</span>
+                <span class="code">EN</span>
+              </label>
+  
+              <input type="radio" class="lang-opt" name="lang" id="lang-ar" value="ar" />
+              <label for="lang-ar" data-lang="ar" class="mb-0">
+                <span class="flag" aria-hidden="true">🇪🇬</span>
+                <span class="code">AR</span>
+              </label>
+  
+              <span class="seg-indicator" aria-hidden="true"></span>
+            </div>
+  
+            <!-- Fallback select for mobile -->
+            <select class="form-select form-select-sm d-lg-none" id="langSwitcher" aria-label="Language switcher">
               <option value="en" selected>EN</option>
               <option value="ar">AR</option>
             </select>
@@ -138,7 +168,7 @@
       </nav>
     </div>
   </header>
-
+  
   <!-- Hero -->
   <section class="hero position-relative overflow-hidden">
     <div class="container position-relative z-2 py-5">
