@@ -7,25 +7,28 @@
   <!-- Home (EN) -->
   <url>
     <loc>https://web.elbayoumi.store/</loc>
-    <lastmod>2025-08-17</lastmod>
+    <lastmod>2025-08-17T12:00:00+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.elbayoumi.store/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/"/>
-    <!-- Optional images for the homepage -->
     <image:image>
       <image:loc>https://web.elbayoumi.store/assets2/img/logo-social.png</image:loc>
+      <image:title>Mohamed Ashraf — Logo</image:title>
+      <image:caption>Software Engineer Portfolio</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://web.elbayoumi.store/assets2/img/hero.png</image:loc>
+      <image:title>Portfolio Hero</image:title>
+      <image:caption>Full-Stack Web Developer — Laravel, React, Node.js</image:caption>
     </image:image>
   </url>
 
   <!-- Home (AR) -->
   <url>
     <loc>https://web.elbayoumi.store/ar/</loc>
-    <lastmod>2025-08-17</lastmod>
+    <lastmod>2025-08-17T12:00:00+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.elbayoumi.store/"/>
@@ -33,40 +36,63 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/"/>
   </url>
 
-  <!-- Project detail pages (ضمها بس لو صفحات حقيقية لايف) -->
+  <!-- Privacy (EN) -->
+  <url>
+    <loc>https://web.elbayoumi.store/privacy.html</loc>
+    <lastmod>2025-08-17T12:00:00+02:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.elbayoumi.store/privacy.html"/>
+    <!-- لو هتعمل نسخة عربية -->
+    <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/privacy.html"/>
+  </url>
+
+  <!-- Project: E-commerce -->
   <url>
     <loc>https://web.elbayoumi.store/portfolio/ecommerce-system</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T10:00:00+02:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.elbayoumi.store/portfolio/ecommerce-system"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/portfolio/ecommerce-system"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/portfolio/ecommerce-system"/>
     <image:image>
       <image:loc>https://web.elbayoumi.store/assets2/img/portfolio/ecommerce-system.png</image:loc>
+      <image:title>E-commerce Platform (Laravel + MySQL)</image:title>
+      <image:caption>Products, payments, and admin dashboard</image:caption>
     </image:image>
   </url>
 
+  <!-- Project: POS -->
   <url>
     <loc>https://web.elbayoumi.store/portfolio/pos-system</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T10:00:00+02:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.elbayoumi.store/portfolio/pos-system"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/portfolio/pos-system"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/portfolio/pos-system"/>
     <image:image>
       <image:loc>https://web.elbayoumi.store/assets2/img/portfolio/pos-system.png</image:loc>
+      <image:title>POS & Inventory System</image:title>
+      <image:caption>Stock control, sales tracking, and invoicing</image:caption>
     </image:image>
   </url>
 
+  <!-- Project: Booking -->
   <url>
     <loc>https://web.elbayoumi.store/portfolio/booking-system</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T10:00:00+02:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.elbayoumi.store/portfolio/booking-system"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/portfolio/booking-system"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/portfolio/booking-system"/>
     <image:image>
       <image:loc>https://web.elbayoumi.store/assets2/img/portfolio/booking-system.png</image:loc>
+      <image:title>Booking & Appointment System</image:title>
+      <image:caption>Scheduling with notifications</image:caption>
     </image:image>
   </url>
 
