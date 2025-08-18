@@ -93,6 +93,20 @@
             "repo": "https://github.com/elbayoumi/auctions-platform"
         },
         {
+            "slug": "qatrawahda",
+            "name": "Qatra Wahda — Car Wash Booking",
+            "desc": "KSA car-wash website with offers, packages, e-store, and OTP phone login.",
+            "stack": [
+                "Laravel",
+                "Blade",
+                "MySQL",
+                "OTP (SMS)"
+            ],
+            "image": "/assets/img/portfolio/qatrawahda.png",
+            "link": "https://qatrawahda.sa/",
+            "repo": "https://github.com/elbayoumi/qatrawahda"
+        },
+        {
             "name": "POS & Inventory System",
             "desc": "Custom Laravel system for stock control, sales tracking, and invoicing.",
             "stack": [
