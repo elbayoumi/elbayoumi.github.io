@@ -70,7 +70,7 @@
                 "MySQL",
                 "Bootstrap"
             ],
-            "image": "assets2/img/portfolio/ecommerce-system.png",
+            "image": "assets/img/portfolio/ecommerce-system.png",
             "link": "",
             "repo": "https://github.com/elbayoumi/laravel-days"
         },
@@ -81,7 +81,7 @@
                 "Laravel",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/pos-system.png",
+            "image": "assets/img/portfolio/pos-system.png",
             "link": "",
             "repo": ""
         },
@@ -92,7 +92,7 @@
                 "Laravel",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/booking-system.png",
+            "image": "assets/img/portfolio/booking-system.png",
             "link": "",
             "repo": ""
         },
@@ -103,7 +103,7 @@
                 "Laravel",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/cms-system.png",
+            "image": "assets/img/portfolio/cms-system.png",
             "link": "",
             "repo": ""
         },
@@ -115,7 +115,7 @@
                 "JWT",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/api-mobile.png",
+            "image": "assets/img/portfolio/api-mobile.png",
             "link": "",
             "repo": "https://github.com/R2-PHP-FINAL-G3/apiServe"
         },
@@ -126,7 +126,7 @@
                 "React",
                 "Charts"
             ],
-            "image": "assets2/img/portfolio/react-dashboard.png",
+            "image": "assets/img/portfolio/react-dashboard.png",
             "link": "",
             "repo": ""
         },
@@ -137,7 +137,7 @@
                 "GitHub Actions",
                 "Docker"
             ],
-            "image": "assets2/img/portfolio/devops-ci-cd.png",
+            "image": "assets/img/portfolio/devops-ci-cd.png",
             "link": "",
             "repo": ""
         },
@@ -150,7 +150,7 @@
                 "jQuery",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/student-registration.png",
+            "image": "assets/img/portfolio/student-registration.png",
             "link": "",
             "repo": ""
         },
@@ -163,7 +163,7 @@
                 "Docker",
                 "Multi-Tenancy"
             ],
-            "image": "assets2/img/portfolio/multi-tenant-saas.png",
+            "image": "assets/img/portfolio/multi-tenant-saas.png",
             "link": "",
             "repo": ""
         },
@@ -175,7 +175,7 @@
                 "Firebase",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/school-bus-tracking.png",
+            "image": "assets/img/portfolio/school-bus-tracking.png",
             "link": "https://play.google.com/store/apps/details?id=com.busaty.supervisor&hl=ar",
             "repo": "https://github.com/orgs/busatyapp/repositories"
         },
@@ -188,7 +188,7 @@
                 "Docker",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/talaride.png",
+            "image": "assets/img/portfolio/talaride.png",
             "link": "",
             "repo": ""
         },
@@ -201,7 +201,7 @@
                 "Leaflet.js",
                 "AJAX"
             ],
-            "image": "assets2/img/portfolio/student-portal.png",
+            "image": "assets/img/portfolio/student-portal.png",
             "link": "",
             "repo": ""
         },
@@ -213,7 +213,7 @@
                 "ApexCharts",
                 "DataTables"
             ],
-            "image": "assets2/img/portfolio/analytics-dashboard.png",
+            "image": "assets/img/portfolio/analytics-dashboard.png",
             "link": "",
             "repo": ""
         },
@@ -225,7 +225,7 @@
                 "Vue.js",
                 "MySQL"
             ],
-            "image": "assets2/img/portfolio/restaurant-ordering.png",
+            "image": "assets/img/portfolio/restaurant-ordering.png",
             "link": "",
             "repo": ""
         }
@@ -244,7 +244,7 @@
         "phone": "+20 102 047 2050",
         "email": "mohamedashrafelbayoumi@gmail.com",
         "resume_view": "https://docs.google.com/document/d/1lJctHqTSPMKKnOujnH8r_iwiUN5i-o_uT9RHo4tHm7s/edit?usp=sharing",
-        "resume_file": "assets2/laravel developer mohamed elbayoumi cv - Mohamed Ashraf.pdf",
+        "resume_file": "assets/laravel developer mohamed elbayoumi cv - Mohamed Ashraf.pdf",
         "socials": {
             "github": "https://github.com/elbayoumi",
             "twitter": "https://twitter.com/MoElbayoumi",
