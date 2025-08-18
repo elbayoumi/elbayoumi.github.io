@@ -89,10 +89,8 @@
                 "Tap Payments"
             ],
             "image": "/assets/img/portfolio/auctions-platform.png",
-            "links": {
-                "live": "",
-                "repo": "https://github.com/elbayoumi/auctions-platform"
-            }
+            "link": "",
+            "repo": "https://github.com/elbayoumi/auctions-platform"
         },
         {
             "name": "POS & Inventory System",
