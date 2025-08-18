@@ -93,6 +93,16 @@
             "repo": "https://github.com/elbayoumi/auctions-platform"
         },
         {
+            "slug": "qatrawahda",
+            "name": "قطرة واحدة — حجز غسيل السيارات",
+            "desc": "موقع سعودي لغسيل السيارات يتضمن العروض والباقات والمتجر، مع تسجيل الدخول عبر رمز تحقق OTP برقم الجوال.",
+            "stack": ["Laravel", "Blade", "MySQL", "OTP (SMS)"],
+            "image": "/assets/img/portfolio/qatrawahda.png",
+            "link": "https://qatrawahda.sa/",
+            "repo": "https://github.com/elbayoumi/qatrawahda"
+          },
+          
+        {
             "name": "نظام نقاط البيع والمخزون",
             "desc": "نظام Laravel مخصص للتحكم في المخزون، تتبع المبيعات، والفواتير.",
             "stack": [
