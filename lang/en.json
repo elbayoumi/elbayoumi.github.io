@@ -75,6 +75,26 @@
             "repo": "https://github.com/elbayoumi/laravel-days"
         },
         {
+            "slug": "auctions-platform",
+            "name": "Auctions Platform",
+            "desc": "Real-time bidding marketplace built with Laravel, Vue 3 (Inertia), Tailwind, Docker, and Tap Payments.",
+            "stack": [
+                "Laravel",
+                "Vue 3",
+                "Inertia",
+                "Tailwind",
+                "MySQL",
+                "Redis",
+                "Docker",
+                "Tap Payments"
+            ],
+            "image": "/assets/img/portfolio/auctions-platform.png",
+            "links": {
+                "live": "",
+                "repo": "https://github.com/elbayoumi/auctions-platform"
+            }
+        },
+        {
             "name": "POS & Inventory System",
             "desc": "Custom Laravel system for stock control, sales tracking, and invoicing.",
             "stack": [

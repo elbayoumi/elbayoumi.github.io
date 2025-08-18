@@ -75,6 +75,26 @@
             "repo": "https://github.com/elbayoumi/laravel-days"
         },
         {
+            "slug": "auctions-platform",
+            "name": "منصّة المزادات",
+            "desc": "سوق مزادات لحظي مبني بـ Laravel وVue 3 (Inertia) وTailwind وDocker مع تكامل Tap Payments.",
+            "stack": [
+                "Laravel",
+                "Vue 3",
+                "Inertia",
+                "Tailwind",
+                "MySQL",
+                "Redis",
+                "Docker",
+                "Tap Payments"
+            ],
+            "image": "/assets/img/portfolio/auctions-platform.png",
+            "links": {
+                "live": "",
+                "repo": "https://github.com/elbayoumi/auctions-platform"
+            }
+        },
+        {
             "name": "نظام نقاط البيع والمخزون",
             "desc": "نظام Laravel مخصص للتحكم في المخزون، تتبع المبيعات، والفواتير.",
             "stack": [
