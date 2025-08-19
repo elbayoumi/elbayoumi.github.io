@@ -70,7 +70,7 @@
                 "MySQL",
                 "Bootstrap"
             ],
-            "image": "assets/img/portfolio/ecommerce-system.png",
+            "image": "assets/img/portfolio/ecommerce-system.webp",
             "link": "",
             "repo": "https://github.com/elbayoumi/laravel-days"
         },
@@ -88,7 +88,7 @@
                 "Docker",
                 "Tap Payments"
             ],
-            "image": "/assets/img/portfolio/auctions-platform.png",
+            "image": "/assets/img/portfolio/auctions-platform.webp",
             "link": "",
             "repo": "https://github.com/elbayoumi/auctions-platform"
         },
@@ -97,7 +97,7 @@
             "name": "قطرة واحدة — حجز غسيل السيارات",
             "desc": "موقع سعودي لغسيل السيارات يتضمن العروض والباقات والمتجر، مع تسجيل الدخول عبر رمز تحقق OTP برقم الجوال.",
             "stack": ["Laravel", "Blade", "MySQL", "OTP (SMS)"],
-            "image": "/assets/img/portfolio/qatrawahda.png",
+            "image": "/assets/img/portfolio/qatrawahda.webp",
             "link": "https://qatrawahda.sa/",
             "repo": "https://github.com/elbayoumi/qatrawahda"
           },
@@ -109,7 +109,7 @@
                 "Laravel",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/pos-system.png",
+            "image": "assets/img/portfolio/pos-system.webp",
             "link": "",
             "repo": ""
         },
@@ -120,7 +120,7 @@
                 "Laravel",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/booking-system.png",
+            "image": "assets/img/portfolio/booking-system.webp",
             "link": "",
             "repo": ""
         },
@@ -131,7 +131,7 @@
                 "Laravel",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/cms-system.png",
+            "image": "assets/img/portfolio/cms-system.webp",
             "link": "",
             "repo": ""
         },
@@ -143,7 +143,7 @@
                 "JWT",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/api-mobile.png",
+            "image": "assets/img/portfolio/api-mobile.webp",
             "link": "",
             "repo": "https://github.com/R2-PHP-FINAL-G3/apiServe"
         },
@@ -154,7 +154,7 @@
                 "React",
                 "Charts"
             ],
-            "image": "assets/img/portfolio/react-dashboard.png",
+            "image": "assets/img/portfolio/react-dashboard.webp",
             "link": "",
             "repo": ""
         },
@@ -165,7 +165,7 @@
                 "GitHub Actions",
                 "Docker"
             ],
-            "image": "assets/img/portfolio/devops-ci-cd.png",
+            "image": "assets/img/portfolio/devops-ci-cd.webp",
             "link": "",
             "repo": ""
         },
@@ -178,7 +178,7 @@
                 "jQuery",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/student-registration.png",
+            "image": "assets/img/portfolio/student-registration.webp",
             "link": "",
             "repo": ""
         },
@@ -191,7 +191,7 @@
                 "Docker",
                 "Multi-Tenancy"
             ],
-            "image": "assets/img/portfolio/multi-tenant-saas.png",
+            "image": "assets/img/portfolio/multi-tenant-saas.webp",
             "link": "",
             "repo": ""
         },
@@ -203,7 +203,7 @@
                 "Firebase",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/school-bus-tracking.png",
+            "image": "assets/img/portfolio/school-bus-tracking.webp",
             "link": "https://play.google.com/store/apps/details?id=com.busaty.supervisor&hl=ar",
             "repo": "https://github.com/orgs/busatyapp/repositories"
         },
@@ -216,7 +216,7 @@
                 "Docker",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/talaride.png",
+            "image": "assets/img/portfolio/talaride.webp",
             "link": "",
             "repo": ""
         },
@@ -229,7 +229,7 @@
                 "Leaflet.js",
                 "AJAX"
             ],
-            "image": "assets/img/portfolio/student-portal.png",
+            "image": "assets/img/portfolio/student-portal.webp",
             "link": "",
             "repo": ""
         },
@@ -241,7 +241,7 @@
                 "ApexCharts",
                 "DataTables"
             ],
-            "image": "assets/img/portfolio/analytics-dashboard.png",
+            "image": "assets/img/portfolio/analytics-dashboard.webp",
             "link": "",
             "repo": ""
         },
@@ -253,7 +253,7 @@
                 "Vue.js",
                 "MySQL"
             ],
-            "image": "assets/img/portfolio/restaurant-ordering.png",
+            "image": "assets/img/portfolio/restaurant-ordering.webp",
             "link": "",
             "repo": ""
         }
