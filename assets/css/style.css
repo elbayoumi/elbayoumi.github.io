@@ -1,24 +1,49 @@
-:root{ --radius:1rem }
-html{ scroll-behavior:smooth }
-body{ font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif }
-.hero{ position:relative; background:linear-gradient(180deg,#f8f9ff,transparent) }
-.hero-img{ border-radius:var(--radius); object-fit:cover }
-.hero-bg{ position:absolute; inset:-10% 0 0; background:radial-gradient(60% 50% at 10% 10%, #e6f0ff 0%, transparent 60%),radial-gradient(60% 60% at 90% 10%, #fff3e6 0%, transparent 60%); z-index:1 }
-section{ scroll-margin-top:90px }
-.badge{ border-radius:999px; padding:0.5rem 0.75rem }
-.card{ border-radius:calc(var(--radius) + .25rem) }
-#projects_list .card-img-top{ height:180px; object-fit:cover }
+:root{--radius:1rem}
+html{scroll-behavior:smooth}
+body{width:100%;margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+.hero{position:relative;background:linear-gradient(180deg,#f8f9ff,transparent)}
+.hero-img{border-radius:var(--radius);object-fit:cover}
+.hero-bg{position:absolute;inset:-10% 0 0;background:radial-gradient(60% 50% at 10% 10%,#e6f0ff 0%,transparent 60%),radial-gradient(60% 60% at 90% 10%,#fff3e6 0%,transparent 60%);z-index:1}
+section{scroll-margin-top:90px}
+.badge{border-radius:999px;padding:.5rem .75rem}
+.card{border-radius:calc(var(--radius) + .25rem)}
+#projects_list .card-img-top{height:180px;object-fit:cover}
 
-/* RTL support */
-[dir="rtl"] body{ font-family:"Tajawal","Cairo",system-ui,sans-serif }
-[dir="rtl"] .hero .list-inline{ padding-right:0 }
+/* RTL */
+[dir="rtl"] body{font-family:"Tajawal","Cairo",system-ui,sans-serif}
+[dir="rtl"] .hero .list-inline{padding-right:0}
 
-/* Subtle hover */
-.card.hover{ transition:transform .25s ease, box-shadow .25s ease }
-.card.hover:hover{ transform:translateY(-4px); box-shadow:0 10px 30px rgba(0,0,0,.06) }
+/* Hover */
+.card.hover{transition:transform .25s ease,box-shadow .25s ease}
+.card.hover:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
 
-/* Accessibility */
-a:focus-visible, button:focus-visible, select:focus-visible{ outline:2px solid #0d6efd; outline-offset:2px }
+/* A11y */
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid #0d6efd;outline-offset:2px}
 
-/* Small tweaks */
-.projects-filter input::placeholder{ opacity:.6 }
+/* Minor */
+.projects-filter input::placeholder{opacity:.6}
+/* === Fix unwanted horizontal scroll === */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* hide horizontal scroll */
+}
+
+/* Bootstrap rows sometimes create -15px margin */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Force containers to stay inside viewport */
+.container, .container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow-x: hidden;
+}
+
+/* Images/videos should not exceed parent width */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
