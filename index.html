@@ -89,11 +89,12 @@
   }
   </script>
   <script>
-    let host = window.location.hostname ;
+    let host = window.location.hostname;
 
     if (host !== 'web.elbayoumi.store') {
-      if (host !== 'http://127.0.0.1:5501') {
-      location.replace('https://web.elbayoumi.store');
+      if (host !== '127.0.0.1:5501/index.html') {
+        // location.replace('https://web.elbayoumi.store');
+        console.log('Redirect to live site disabled for local dev dddd');
       }
     }
   </script>

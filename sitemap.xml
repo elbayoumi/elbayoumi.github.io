@@ -14,12 +14,12 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/"/>
     <image:image>
-      <image:loc>https://web.elbayoumi.store/assets2/img/logo-social.png</image:loc>
+      <image:loc>https://web.elbayoumi.store/assets/img/logo-social.png</image:loc>
       <image:title>Mohamed Ashraf — Logo</image:title>
       <image:caption>Software Engineer Portfolio</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://web.elbayoumi.store/assets2/img/hero.png</image:loc>
+      <image:loc>https://web.elbayoumi.store/assets/img/hero.png</image:loc>
       <image:title>Portfolio Hero</image:title>
       <image:caption>Full-Stack Web Developer — Laravel, React, Node.js</image:caption>
     </image:image>
@@ -58,7 +58,7 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/portfolio/ecommerce-system"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/portfolio/ecommerce-system"/>
     <image:image>
-      <image:loc>https://web.elbayoumi.store/assets2/img/portfolio/ecommerce-system.png</image:loc>
+      <image:loc>https://web.elbayoumi.store/assets/img/portfolio/ecommerce-system.png</image:loc>
       <image:title>E-commerce Platform (Laravel + MySQL)</image:title>
       <image:caption>Products, payments, and admin dashboard</image:caption>
     </image:image>
@@ -74,7 +74,7 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/portfolio/pos-system"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/portfolio/pos-system"/>
     <image:image>
-      <image:loc>https://web.elbayoumi.store/assets2/img/portfolio/pos-system.png</image:loc>
+      <image:loc>https://web.elbayoumi.store/assets/img/portfolio/pos-system.png</image:loc>
       <image:title>POS & Inventory System</image:title>
       <image:caption>Stock control, sales tracking, and invoicing</image:caption>
     </image:image>
@@ -90,7 +90,7 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.elbayoumi.store/ar/portfolio/booking-system"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.elbayoumi.store/portfolio/booking-system"/>
     <image:image>
-      <image:loc>https://web.elbayoumi.store/assets2/img/portfolio/booking-system.png</image:loc>
+      <image:loc>https://web.elbayoumi.store/assets/img/portfolio/booking-system.png</image:loc>
       <image:title>Booking & Appointment System</image:title>
       <image:caption>Scheduling with notifications</image:caption>
     </image:image>
