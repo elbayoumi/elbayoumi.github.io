@@ -88,24 +88,15 @@
     ]
   }
   </script>
- <script>
-  (function () {
-    const host = window.location.hostname;  // e.g. "127.0.0.1" or "web.elbayoumi.store"
-    const port = window.location.port;      // e.g. "5501" or "" (empty for 80/443)
+  <script>
+    let host = window.location.hostname ;
 
-    // Redirect if:
-    // - NOT on the official domain
-    // - AND NOT on the allowed local dev environment (127.0.0.1:5501)
-    if (
-      host !== "web.elbayoumi.store" &&
-      !(host === "127.0.0.1" && port === "5501")
-    ) {
-      window.location.replace("https://web.elbayoumi.store");
+    if (host !== 'web.elbayoumi.store') {
+      if (host === 'http://127.0.0.1:5501') {
+      location.replace('https://web.elbayoumi.store');
+      }
     }
-    // Otherwise: do nothing (stay on current page).
-  })();
-</script>
-
+  </script>
   <!-- Favicons / PWA (paths unified) -->
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo-32.png" />
