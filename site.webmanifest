@@ -17,25 +17,25 @@
 
   "icons": [
     {
-      "src": "/assets2/img/logo-192.png",
+      "src": "/assets/img/logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets2/img/logo-512.png",
+      "src": "/assets/img/logo-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets2/img/favicon.svg",
+      "src": "/assets/img/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/assets2/img/maskable-icon.png",
+      "src": "/assets/img/maskable-icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -47,13 +47,13 @@
       "name": "View Portfolio",
       "short_name": "Portfolio",
       "url": "/#projects",
-      "icons": [{ "src": "/assets2/img/logo-192.png", "sizes": "192x192", "type": "image/png" }]
+      "icons": [{ "src": "/assets/img/logo-192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
       "name": "Contact",
       "short_name": "Contact",
       "url": "/#contact",
-      "icons": [{ "src": "/assets2/img/logo-192.png", "sizes": "192x192", "type": "image/png" }]
+      "icons": [{ "src": "/assets/img/logo-192.png", "sizes": "192x192", "type": "image/png" }]
     }
   ]
 }

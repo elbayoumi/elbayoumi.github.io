@@ -89,15 +89,25 @@
   }
   </script>
   <script>
-    let host = window.location.hostname;
+    (function () {
+      const { protocol, hostname, port, pathname, search, hash } = window.location;
 
-    if (host !== 'web.elbayoumi.store') {
-      if (host !== '127.0.0.1:5501/index.html') {
-        // location.replace('https://web.elbayoumi.store');
-        console.log('Redirect to live site disabled for local dev dddd');
+      // Allow: production domain
+      const isProd = hostname === 'web.elbayoumi.store';
+
+      // Allow: local dev (127.0.0.1:5501 or localhost:5501)
+      const isLocalDev = (hostname === '127.0.0.1' || hostname === 'localhost') && port === '5501';
+
+      // Allow: opening the file directly (e.g., file://.../index.html)
+      const isFileOpen = protocol === 'file:';
+
+      // Redirect everything else to the live site (preserve path/query/hash)
+      if (!isProd && !isLocalDev && !isFileOpen) {
+        window.location.replace('https://web.elbayoumi.store' + pathname + search + hash);
       }
-    }
+    })();
   </script>
+
   <!-- Favicons / PWA (paths unified) -->
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo-32.png" />
