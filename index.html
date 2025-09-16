@@ -28,6 +28,7 @@
   <meta property="og:site_name" content="Software Engineer Portfolio" />
   <meta property="og:title" content="Mohamed Ashraf Elbayoumi | Full-Stack Developer" />
   <meta property="og:description" content="Modern, fast, bilingual portfolio (EN/AR)." />
+  <meta property="og:updated_time" content="2025-09-16" />
   <meta property="og:image" content="https://web.elbayoumi.store/assets/img/my.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -109,10 +110,10 @@
   </script>
 
   <!-- Favicons / PWA (paths unified) -->
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo-32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/logo-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo-180.png" />
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.webp" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192x192.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo-180.webp" />
   <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Preconnects -->
@@ -322,7 +323,7 @@
   <section class="hero position-relative overflow-hidden">
     <div class="container position-relative z-2 py-5">
       <div class="row align-items-center g-4">
-        <div class="col-lg-7">
+        <div class="col-lg-7" data-reveal>
           <h1 class="display-5 fw-bold mb-3" id="hero_title">Mohamed Ashraf Elbayoumi</h1>
           <p class="lead text-secondary mb-4" id="hero_subtitle">Full-Stack Web Developer — Laravel, React, Node.js</p>
           <div class="d-flex gap-3">
@@ -337,7 +338,7 @@
           </ul>
         </div>
         <!-- Image column: flex-centered & responsive -->
-        <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center align-items-center text-center">
+        <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center align-items-center text-center" data-reveal>
           <img src="/assets/img/hero.webp" class="hero-img img-fluid shadow-lg" width="1120" height="630"
             alt="Portfolio hero — Mohamed Ashraf" loading="eager" decoding="async" fetchpriority="high" />
         </div>
@@ -348,7 +349,7 @@
 
   <main id="content">
     <!-- About -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5" data-reveal>
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-lg-5 text-center">
@@ -371,7 +372,7 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="py-5 bg-light">
+    <section id="services" class="py-5 bg-light" data-reveal>
       <div class="container">
         <h2 class="h1 text-center mb-4" id="services_title">Services</h2>
         <div class="row g-4" id="services_cards">
@@ -419,7 +420,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5" data-reveal>
       <div class="container">
         <div class="d-flex align-items-center justify-content-between mb-3">
           <h2 class="h1" id="projects_title">Selected Projects</h2>
@@ -436,7 +437,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-light" data-reveal>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -468,7 +469,7 @@
               <div class="d-flex flex-wrap gap-2 mt-3">
                 <a id="contact_btn" href="mailto:mohamedashrafelbayoumi@gmail.com" class="btn btn-primary btn-lg">Email
                   Me</a>
-                <a id="cv_btn" href="/assets/Mohamed-Ashraf-Elbayoumi-CV.pdf" class="btn btn-outline-secondary btn-lg"
+                <a id="cv_btn" href="/assets/laravel developer mohamed elbayoumi cv - Mohamed Ashraf.pdf" class="btn btn-outline-secondary btn-lg"
                   download>
                   <i class="bi bi-download me-2"></i><span id="cv_btn_text">Download Resume</span>
                 </a>
@@ -513,7 +514,7 @@
           </p>
 
           <!-- Social -->
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2" data-reveal>
             <a href="https://github.com/elbayoumi" class="btn btn-outline-light rounded-circle p-2" target="_blank"
               rel="noopener" aria-label="GitHub">
               <i class="bi bi-github"></i>
@@ -544,7 +545,7 @@
             <li class="nav-item"><a class="nav-link px-0 link-light link-opacity-75-hover" href="#contact">Contact</a>
             </li>
             <li class="nav-item"><a class="nav-link px-0 link-light link-opacity-75-hover"
-                href="/assets/Mohamed-Ashraf-Elbayoumi-CV.pdf" download>Download CV</a></li>
+                href="/assets/laravel developer mohamed elbayoumi cv - Mohamed Ashraf.pdf" download>Download CV</a></li>
           </ul>
         </div>
 
@@ -576,7 +577,7 @@
       <!-- Bottom bar -->
       <div
         class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-secondary mt-4 pt-3">
-        <small class="text-white-50">© 2025 Mohamed Ashraf. All rights reserved.</small>
+        <small id="footer_text" class="text-white-50">© 2025 Mohamed Ashraf. All rights reserved.</small>
         <a href="#top" class="btn btn-sm btn-outline-light mt-2 mt-md-0">
           <i class="bi bi-arrow-up-short"></i> Back to top
         </a>
@@ -593,29 +594,7 @@
   <script src="/assets/js/app.js" defer></script>
 </body>
 <script>
-  (function () {
-    const html = document.documentElement;
-    const langSel = document.getElementById('langSwitcher');
-    const rtlLink = document.getElementById('bsRTL');
-
-    function applyLang(lang) {
-      const isAr = lang === 'ar';
-      html.setAttribute('lang', lang);
-      html.setAttribute('dir', isAr ? 'rtl' : 'ltr');
-
-      // فعّل Bootstrap RTL لما تكون AR
-      if (rtlLink) {
-        if (isAr) rtlLink.removeAttribute('disabled');
-        else rtlLink.setAttribute('disabled', '');
-      }
-    }
-
-    // تطبيق مبدئي حسب القيمة الحالية
-    if (langSel) {
-      applyLang(langSel.value);
-      langSel.addEventListener('change', (e) => applyLang(e.target.value));
-    }
-  })();
+  // Moved language/RTL handling into assets/js/app.js to keep HTML clean.
 </script>
 
 </html>

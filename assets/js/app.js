@@ -1,5 +1,12 @@
 const LANG_DEFAULT = 'en';
 const dirMap = { en: 'ltr', ar: 'rtl' };
+const htmlEl = document.documentElement;
+const rtlLink = document.getElementById('bsRTL');
+
+// Simple in-memory cache for i18n and projects
+const i18nCache = {};
+const projectsCacheByLang = {};
+let revealObserver = null;
 
 const els = {
   title: document.getElementById('title'),
@@ -31,8 +38,13 @@ const els = {
 let currentLang = localStorage.getItem('lang') || LANG_DEFAULT;
 
 async function loadLang(lang){
-  const res = await fetch(`lang/${lang}.json`, { cache: 'no-store' });
-  const t = await res.json();
+  // Use cache if available; otherwise fetch and cache
+  let t = i18nCache[lang];
+  if(!t){
+    const res = await fetch(`lang/${lang}.json`, { cache: 'no-store' });
+    t = await res.json();
+    i18nCache[lang] = t;
+  }
 
   // Basic text
   els.title.textContent = t.title;
@@ -82,7 +94,8 @@ async function loadLang(lang){
 
   // Projects (filterable)
   els.projects_title.textContent = t.projects_title;
-  renderProjects(t.projects || []);
+  projectsCacheByLang[lang] = t.projects || [];
+  renderProjects(projectsCacheByLang[lang]);
 
   els.contact_title.textContent = t.contact_title;
   els.contact_text.textContent = t.contact_text;
@@ -90,12 +103,30 @@ async function loadLang(lang){
   els.footer_text.textContent = t.footer_text;
   els.cv_btn_text.textContent = t.cv_btn_text;
 
-  document.documentElement.lang = lang;
-  document.documentElement.dir = dirMap[lang] || 'ltr';
+  htmlEl.lang = lang;
+  htmlEl.dir = dirMap[lang] || 'ltr';
+  // Toggle Bootstrap RTL stylesheet
+  if(rtlLink){
+    if(lang === 'ar') rtlLink.removeAttribute('disabled');
+    else rtlLink.setAttribute('disabled', '');
+  }
   localStorage.setItem('lang', lang);
+  currentLang = lang;
 
   // Adjust placeholders
   els.search.placeholder = t.search_placeholder || 'Search projects';
+
+  // Update SEO metas dynamically if present
+  const mDesc = document.querySelector('meta[name="description"]');
+  if(mDesc && t.meta_description){ mDesc.setAttribute('content', t.meta_description); }
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if(ogTitle){ ogTitle.setAttribute('content', t.title); }
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if(ogDesc && t.meta_description){ ogDesc.setAttribute('content', t.meta_description); }
+  const twTitle = document.querySelector('meta[name="twitter:title"]');
+  if(twTitle){ twTitle.setAttribute('content', t.title); }
+  const twDesc = document.querySelector('meta[name="twitter:description"]');
+  if(twDesc && t.meta_description){ twDesc.setAttribute('content', t.meta_description); }
 }
 
 function renderProjects(projects){
@@ -123,9 +154,36 @@ function renderProjects(projects){
 }
 
 // Events
-els.langSwitcher.addEventListener('change', e => loadLang(e.target.value));
-els.search.addEventListener('input', () => fetch(`lang/${currentLang}.json`).then(r=>r.json()).then(t=>renderProjects(t.projects || [])));
+els.langSwitcher.addEventListener('change', e => {
+  const next = e.target.value;
+  loadLang(next);
+});
+els.search.addEventListener('input', () => {
+  const projects = projectsCacheByLang[currentLang] || [];
+  renderProjects(projects);
+});
 
 // Init
 loadLang(currentLang);
 els.langSwitcher.value = currentLang;
+
+// Reveal animations
+function initReveal(){
+  if(!('IntersectionObserver' in window)) return;
+  revealObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+
+  document.querySelectorAll('[data-reveal]').forEach(el=>revealObserver.observe(el));
+}
+
+if(document.readyState === 'loading'){
+  document.addEventListener('DOMContentLoaded', initReveal);
+} else {
+  initReveal();
+}
