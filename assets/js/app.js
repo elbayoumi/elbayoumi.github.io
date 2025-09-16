@@ -35,7 +35,11 @@ const els = {
   langSwitcher: document.getElementById('langSwitcher')
 };
 
-let currentLang = localStorage.getItem('lang') || LANG_DEFAULT;
+// Read ?lang=ar|en once to initialize
+const urlParams = new URLSearchParams(location.search);
+let initLang = urlParams.get('lang');
+if(initLang !== 'ar' && initLang !== 'en') initLang = null;
+let currentLang = initLang || localStorage.getItem('lang') || LANG_DEFAULT;
 
 async function loadLang(lang){
   // Use cache if available; otherwise fetch and cache
@@ -157,6 +161,11 @@ function renderProjects(projects){
 els.langSwitcher.addEventListener('change', e => {
   const next = e.target.value;
   loadLang(next);
+  // pushState to reflect selected language without reload
+  const params = new URLSearchParams(location.search);
+  params.set('lang', next);
+  const newUrl = `${location.pathname}?${params.toString()}${location.hash}`;
+  history.replaceState({}, '', newUrl);
 });
 els.search.addEventListener('input', () => {
   const projects = projectsCacheByLang[currentLang] || [];
