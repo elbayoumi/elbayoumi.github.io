@@ -1,58 +1,208 @@
-:root{--radius:1rem}
-html{scroll-behavior:smooth}
-body{width:100%;margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
-.hero{position:relative;background:linear-gradient(180deg,#f8f9ff,transparent)}
-.hero-img{border-radius:var(--radius);object-fit:cover}
-.hero-bg{position:absolute;inset:-10% 0 0;background:radial-gradient(60% 50% at 10% 10%,#e6f0ff 0%,transparent 60%),radial-gradient(60% 60% at 90% 10%,#fff3e6 0%,transparent 60%);z-index:1}
-section{scroll-margin-top:90px}
-.badge{border-radius:999px;padding:.5rem .75rem}
-.card{border-radius:calc(var(--radius) + .25rem)}
-#projects_list .card-img-top{height:180px;object-fit:cover}
+/* ==============================
+   Root variables & base
+   ============================== */
 
-/* RTL */
-[dir="rtl"] body{font-family:"Tajawal","Cairo",system-ui,sans-serif}
-[dir="rtl"] .hero .list-inline{padding-right:0}
+:root {
+  --radius: 1rem;
+}
 
-/* Hover */
-.card.hover{transition:transform .25s ease,box-shadow .25s ease}
-.card.hover:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+/* Smooth scrolling (with a11y fallback below) */
+html {
+  scroll-behavior: smooth;
+}
 
-/* A11y */
-a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid #0d6efd;outline-offset:2px}
+/* Base body styles */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+    "Noto Sans", sans-serif;
+}
 
-/* Minor */
-.projects-filter input::placeholder{opacity:.6}
-/* === Fix unwanted horizontal scroll === */
-html, body {
+/* Each section anchors nicely below sticky navbar */
+section {
+  scroll-margin-top: 90px;
+}
+
+
+/* ==============================
+   Hero section
+   ============================== */
+
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, #f8f9ff, transparent);
+}
+
+.hero-img {
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -10% 0 0;
+  background:
+    radial-gradient(60% 50% at 10% 10%, #e6f0ff 0%, transparent 60%),
+    radial-gradient(60% 60% at 90% 10%, #fff3e6 0%, transparent 60%);
+  z-index: 1;
+}
+
+
+/* ==============================
+   Badges & cards
+   ============================== */
+
+.badge {
+  border-radius: 999px;
+  padding: 0.5rem 0.75rem;
+}
+
+.card {
+  border-radius: calc(var(--radius) + 0.25rem);
+}
+
+/* Project card images */
+#projects_list .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+
+/* ==============================
+   Projects filter
+   ============================== */
+
+.projects-filter input::placeholder {
+  opacity: 0.6;
+}
+
+
+/* ==============================
+   RTL support
+   ============================== */
+
+[dir="rtl"] body {
+  font-family: "Tajawal", "Cairo", system-ui, sans-serif;
+}
+
+[dir="rtl"] .hero .list-inline {
+  padding-right: 0;
+}
+
+
+/* ==============================
+   Hover effects
+   ============================== */
+
+.card.hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card.hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Subtle hover for circular social buttons */
+.btn-icon {
+  will-change: transform;
+}
+
+
+/* ==============================
+   Accessibility & focus
+   ============================== */
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+/* ==============================
+   Layout & horizontal scroll fixes
+   ============================== */
+
+/* Prevent horizontal scroll issues */
+html,
+body {
   max-width: 100%;
-  overflow-x: hidden; /* hide horizontal scroll */
+  overflow-x: hidden;
 }
 
-/* Bootstrap rows sometimes create -15px margin */
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+/*
+  Bootstrap rows sometimes introduce negative margins.
+  We normalize them inside containers to avoid horizontal scroll
+  without breaking the grid system globally.
+*/
+.container .row,
+.container-fluid .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/* Force containers to stay inside viewport */
-.container, .container-fluid {
+/* Keep containers inside viewport with comfortable padding */
+.container,
+.container-fluid {
   padding-left: 16px;
   padding-right: 16px;
   overflow-x: hidden;
 }
 
-/* Images/videos should not exceed parent width */
-img, video {
+
+/* ==============================
+   Responsive media
+   ============================== */
+
+/* Images/videos should not exceed their parent width */
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* ===== Reveal animations (respect reduced motion) ===== */
-@media (prefers-reduced-motion: no-preference) {
-  [data-reveal] {opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .6s ease;}
-  [data-reveal].is-visible {opacity: 1; transform: none;}
+
+/* ==============================
+   Reveal animations (safe & accessible)
+   ============================== */
+
+/*
+  Safe defaults:
+  - Content is visible by default.
+  - JS can opt-in to animation by adding .reveal-hidden / .reveal-animated.
+*/
+
+[data-reveal] {
+  opacity: 1;
+  transform: none;
 }
 
-/* Subtle hover for social icon round buttons */
-.btn-icon { will-change: transform; }
+/* When JS is active, elements start hidden and slide in */
+[data-reveal].reveal-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+[data-reveal].reveal-animated {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* If user prefers reduced motion, disable the animation itself */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal].reveal-animated {
+    transition: none;
+    transform: none;
+  }
+}
