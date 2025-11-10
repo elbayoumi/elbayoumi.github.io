@@ -43,12 +43,22 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.1devx.com/privacy.html"/>
-    <!-- لو هتعمل نسخة عربية -->
     <xhtml:link rel="alternate" hreflang="ar" href="https://web.1devx.com/ar/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/privacy.html"/>
   </url>
 
-  <!-- Project: E-commerce -->
+  <!-- Privacy (AR) -->
+  <url>
+    <loc>https://web.1devx.com/ar/privacy.html</loc>
+    <lastmod>2025-08-17T12:00:00+02:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.1devx.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://web.1devx.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/privacy.html"/>
+  </url>
+
+  <!-- Project: E-commerce (EN) -->
   <url>
     <loc>https://web.1devx.com/portfolio/ecommerce-system</loc>
     <lastmod>2025-08-14T10:00:00+02:00</lastmod>
@@ -64,7 +74,18 @@
     </image:image>
   </url>
 
-  <!-- Project: POS -->
+  <!-- Project: E-commerce (AR) -->
+  <url>
+    <loc>https://web.1devx.com/ar/portfolio/ecommerce-system</loc>
+    <lastmod>2025-08-14T10:00:00+02:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.1devx.com/portfolio/ecommerce-system"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://web.1devx.com/ar/portfolio/ecommerce-system"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/portfolio/ecommerce-system"/>
+  </url>
+
+  <!-- Project: POS (EN) -->
   <url>
     <loc>https://web.1devx.com/portfolio/pos-system</loc>
     <lastmod>2025-08-14T10:00:00+02:00</lastmod>
@@ -75,12 +96,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/portfolio/pos-system"/>
     <image:image>
       <image:loc>https://web.1devx.com/assets/img/portfolio/pos-system.png</image:loc>
-      <image:title>POS & Inventory System</image:title>
+      <image:title>POS &amp; Inventory System</image:title>
       <image:caption>Stock control, sales tracking, and invoicing</image:caption>
     </image:image>
   </url>
 
-  <!-- Project: Booking -->
+  <!-- Project: POS (AR) -->
+  <url>
+    <loc>https://web.1devx.com/ar/portfolio/pos-system</loc>
+    <lastmod>2025-08-14T10:00:00+02:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.1devx.com/portfolio/pos-system"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://web.1devx.com/ar/portfolio/pos-system"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/portfolio/pos-system"/>
+  </url>
+
+  <!-- Project: Booking (EN) -->
   <url>
     <loc>https://web.1devx.com/portfolio/booking-system</loc>
     <lastmod>2025-08-14T10:00:00+02:00</lastmod>
@@ -91,9 +123,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/portfolio/booking-system"/>
     <image:image>
       <image:loc>https://web.1devx.com/assets/img/portfolio/booking-system.png</image:loc>
-      <image:title>Booking & Appointment System</image:title>
+      <image:title>Booking &amp; Appointment System</image:title>
       <image:caption>Scheduling with notifications</image:caption>
     </image:image>
+  </url>
+
+  <!-- Project: Booking (AR) -->
+  <url>
+    <loc>https://web.1devx.com/ar/portfolio/booking-system</loc>
+    <lastmod>2025-08-14T10:00:00+02:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.1devx.com/portfolio/booking-system"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://web.1devx.com/ar/portfolio/booking-system"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://web.1devx.com/portfolio/booking-system"/>
   </url>
 
 </urlset>
