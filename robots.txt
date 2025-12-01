@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://web.elbayoumi.store/sitemap.xml
+Sitemap: https://elbayoumi.github.io/sitemap.xml
