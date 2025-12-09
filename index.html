@@ -90,7 +90,7 @@
     ]
   }
   </script>
-  <script>
+  <!-- <script>
     (function () {
       const { protocol, hostname, port, pathname, search, hash } = window.location;
 
@@ -108,7 +108,33 @@
         window.location.replace('https://web.1devx.com' + pathname + search + hash);
       }
     })();
+  </script> -->
+  <script>
+    (function () {
+      const { protocol, hostname, port, pathname, search, hash } = window.location;
+
+      // Allowed domains whitelist
+      const allowedDomains = [
+        "web.1devx.com",
+        "localhost",
+        "127.0.0.1",
+        "staging.1devx.com",
+        "preview.1devx.com"
+      ];
+
+      // Allow opening the file directly (file://)
+      const isFileOpen = protocol === "file:";
+
+      // Check if current hostname is in the allowed list
+      const isAllowedDomain = allowedDomains.includes(hostname);
+
+      // Redirect if not allowed
+      if (!isAllowedDomain && !isFileOpen) {
+        window.location.replace("https://web.1devx.com" + pathname + search + hash);
+      }
+    })();
   </script>
+
 
   <!-- Favicons / PWA (paths unified) -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
