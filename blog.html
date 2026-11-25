@@ -1,150 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insights & Blog | Mohamed Ashraf</title>
-    <meta name="description" content="Thoughts on software engineering, web development, and tech career advice.">
-    <meta name="keywords" content="Software Engineering Blog, Web Development Insights, Tech Career Advice">
-    <link rel="canonical" href="https://elbayoumi.github.io/blog.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights | Mohamed Ashraf</title>
+<meta name="description" content="Thoughts on software engineering, web development, and more.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Mohamed Ashraf Elbayoumi">
+<link rel="canonical" href="https://elbayoumi.github.io/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elbayoumi.github.io/blog.html">
+<meta property="og:title" content="Insights | Mohamed Ashraf">
+<meta property="og:description" content="Thoughts on software engineering, web development, and more.">
+<meta property="og:image" content="https://elbayoumi.github.io/assets/img/logo-social.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.ico"><link rel="icon" type="image/webp" sizes="32x32" href="assets/img/favicon-32x32.webp"><link rel="apple-touch-icon" href="assets/img/logo-180.webp"><link rel="manifest" href="site.webmanifest"><meta name="theme-color" content="#060913"><meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="assets/css/site.css">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="blog">
-    <meta property="og:url" content="https://elbayoumi.github.io/blog.html">
-    <meta property="og:title" content="Insights & Blog | Mohamed Ashraf">
-    <meta property="og:description"
-        content="Thoughts on software engineering, web development, and tech career advice.">
-
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Insights & Blog",
-    "author": {
-      "@type": "Person",
-      "name": "Mohamed Ashraf"
-    },
-    "description": "Thoughts on software engineering, web development, and tech career advice."
-  }
-  </script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style-v2.css">
-</head>
-
-<body>
-
-    <header>
-        <div class="container navbar">
-            <a href="index-v2.html" class="logo text-primary" style="font-weight: 700; font-size: 1.5rem;">M.Ashraf</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Work</a></li>
-                    <li><a href="blog.html" class="nav-link text-primary">Insights</a></li>
-                    <li><a href="contact.html" class="nav-link btn btn-primary" style="padding: 8px 16px;">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container" style="padding-top: 80px; padding-bottom: 80px;">
-        <h1 style="margin-bottom: 20px;">Insights</h1>
-        <p class="hero-desc">Thoughts on software engineering, web development, and more.</p>
-
-        <div
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px;">
-
-            <!-- Article 1 -->
-            <article class="card" style="padding: 0; overflow: hidden;">
-                <div
-                    style="height: 200px; background-color: var(--color-bg-lighter); display: flex; align-items: center; justify-content: center;">
-                    <i class="bi bi-file-earmark-code" style="font-size: 3rem; color: var(--color-text-muted);"></i>
-                </div>
-                <div style="padding: 24px;">
-                    <span class="text-primary" style="font-family: var(--font-mono); font-size: 0.8rem;">Dec 1,
-                        2025</span>
-                    <h3 style="margin-top: 10px; font-size: 1.4rem;"><a href="#"
-                            style="color: var(--color-white);">Optimizing React Performance</a></h3>
-                    <p style="margin-top: 10px; font-size: 0.95rem;">
-                        A deep dive into common performance pitfalls in React applications and how to fix them using
-                        memoization and code splitting.
-                    </p>
-                    <a href="#" class="text-primary"
-                        style="font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; display: inline-block;">Read
-                        More <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="card" style="padding: 0; overflow: hidden;">
-                <div
-                    style="height: 200px; background-color: var(--color-bg-lighter); display: flex; align-items: center; justify-content: center;">
-                    <i class="bi bi-cloud" style="font-size: 3rem; color: var(--color-text-muted);"></i>
-                </div>
-                <div style="padding: 24px;">
-                    <span class="text-primary" style="font-family: var(--font-mono); font-size: 0.8rem;">Nov 15,
-                        2025</span>
-                    <h3 style="margin-top: 10px; font-size: 1.4rem;"><a href="#"
-                            style="color: var(--color-white);">Serverless Architecture 101</a></h3>
-                    <p style="margin-top: 10px; font-size: 0.95rem;">
-                        Understanding the pros and cons of serverless architecture and when to use it for your next
-                        project.
-                    </p>
-                    <a href="#" class="text-primary"
-                        style="font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; display: inline-block;">Read
-                        More <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="card" style="padding: 0; overflow: hidden;">
-                <div
-                    style="height: 200px; background-color: var(--color-bg-lighter); display: flex; align-items: center; justify-content: center;">
-                    <i class="bi bi-shield-lock" style="font-size: 3rem; color: var(--color-text-muted);"></i>
-                </div>
-                <div style="padding: 24px;">
-                    <span class="text-primary" style="font-family: var(--font-mono); font-size: 0.8rem;">Oct 28,
-                        2025</span>
-                    <h3 style="margin-top: 10px; font-size: 1.4rem;"><a href="#"
-                            style="color: var(--color-white);">Securing Your API</a></h3>
-                    <p style="margin-top: 10px; font-size: 0.95rem;">
-                        Best practices for securing RESTful APIs, including rate limiting, authentication, and input
-                        validation.
-                    </p>
-                    <a href="#" class="text-primary"
-                        style="font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; display: inline-block;">Read
-                        More <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </article>
-
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div style="margin-bottom: 20px;">
-                <a href="#" class="text-muted" style="margin: 0 10px;"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-muted" style="margin: 0 10px;"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="text-muted" style="margin: 0 10px;"><i class="bi bi-twitter-x"></i></a>
-            </div>
-            <p>Designed & Built by Mohamed Ashraf</p>
-        </div>
-    </footer>
-
+</head><body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="fx" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grid"></div></div>
+<div class="spotlight" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Mohamed Ashraf — home"><span class="mark"><i class="bi bi-code-slash"></i></span><span>Mohamed Ashraf</span></a>
+    <nav class="nav-links" id="menu" aria-label="Main"><a class="link" href="index.html">Home</a><a class="link" href="about.html">About</a><a class="link" href="services.html">Services</a><a class="link" href="portfolio.html">Work</a><a class="link active" href="blog.html" aria-current=page>Insights</a><a class="link" href="contact.html">Contact</a></nav>
+    <div class="nav-tools">
+      <div class="socials nav-social"><a href="https://github.com/elbayoumi" class="icon-btn github" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/mohamed-elbayoumi/" class="icon-btn linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://wa.me/201020472050" class="icon-btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<a href="tel:+201020472050" class="icon-btn phone" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a></div>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+</header>
+<main id="content">
+<section class="page-hero"><div class="container">
+  <span class="eyebrow" data-reveal>Insights</span>
+  <h1 class="page-title" data-reveal style="--d:1">Thoughts &amp; <span class="grad-text">Notes</span></h1>
+  <p data-reveal style="--d:2">Thoughts on software engineering, web development, and more.</p>
+</div></section>
+<section class="section" style="padding-top:30px"><div class="container"><div class="grid-3"><article class="card article" data-reveal style="--d:0"><div class="thumb"><i class="bi bi-file-earmark-code"></i></div><div class="tl-meta"><span class="meta">Dec 1, 2025</span><span class="soon">Coming soon</span></div><h3>Optimizing React Performance</h3><p>A deep dive into common performance pitfalls in React applications and how to fix them using memoization and code splitting.</p><span class="read-more">Read More <i class="bi bi-arrow-right"></i></span></article><article class="card article" data-reveal style="--d:1"><div class="thumb"><i class="bi bi-cloud"></i></div><div class="tl-meta"><span class="meta">Nov 15, 2025</span><span class="soon">Coming soon</span></div><h3>Serverless Architecture 101</h3><p>Understanding the pros and cons of serverless architecture and when to use it for your next project.</p><span class="read-more">Read More <i class="bi bi-arrow-right"></i></span></article><article class="card article" data-reveal style="--d:2"><div class="thumb"><i class="bi bi-shield-lock"></i></div><div class="tl-meta"><span class="meta">Oct 28, 2025</span><span class="soon">Coming soon</span></div><h3>Securing Your API</h3><p>Best practices for securing RESTful APIs, including rate limiting, authentication, and input validation.</p><span class="read-more">Read More <i class="bi bi-arrow-right"></i></span></article></div></div></section>
+</main><footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="mark"><i class="bi bi-code-slash"></i></span><span>Mohamed Ashraf</span></a>
+        <p style="margin-top:16px;max-width:380px">Full-Stack Web Developer — Laravel, React, Node.js. I build secure, high-performance web apps &amp; APIs.</p>
+        <div class="socials"><a href="https://github.com/elbayoumi" class="icon-btn github" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/mohamed-elbayoumi/" class="icon-btn linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://wa.me/201020472050" class="icon-btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<a href="tel:+201020472050" class="icon-btn phone" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a></div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="assets/laravel%20developer%20mohamed%20elbayoumi%20cv%20-%20Mohamed%20Ashraf.pdf" download>Download CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="bi bi-geo-alt"></i>Mansoura, Egypt</li>
+          <li><i class="bi bi-telephone"></i><a href="tel:+201020472050" dir="ltr">+20 102 047 2050</a></li>
+          <li><i class="bi bi-envelope"></i><a href="mailto:mohamedashrafelbayoumi@gmail.com">mohamedashrafelbayoumi@gmail.com</a></li>
+          <li><i class="bi bi-diagram-3"></i><a href="sitemap.xml">Sitemap</a> · <a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><small>© <span data-year>2025</span> Mohamed Ashraf. All rights reserved.</small><small>Designed &amp; built by Mohamed Ashraf</small></div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></button>
+<script src="assets/js/site.js"></script>
 </body>
-
 </html>

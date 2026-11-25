@@ -96,12 +96,16 @@
             "slug": "qatrawahda",
             "name": "قطرة واحدة — حجز غسيل السيارات",
             "desc": "موقع سعودي لغسيل السيارات يتضمن العروض والباقات والمتجر، مع تسجيل الدخول عبر رمز تحقق OTP برقم الجوال.",
-            "stack": ["Laravel", "Blade", "MySQL", "OTP (SMS)"],
+            "stack": [
+                "Laravel",
+                "Blade",
+                "MySQL",
+                "OTP (SMS)"
+            ],
             "image": "/assets/img/portfolio/qatrawahda.webp",
             "link": "https://qatrawahda.sa/",
             "repo": "https://github.com/elbayoumi/qatrawahda"
-          },
-          
+        },
         {
             "name": "نظام نقاط البيع والمخزون",
             "desc": "نظام Laravel مخصص للتحكم في المخزون، تتبع المبيعات، والفواتير.",
@@ -372,5 +376,53 @@
                 "Tailwind"
             ]
         }
+    },
+    "nav_resume": "الخبرات",
+    "nav_blog": "مقالات",
+    "hero_roles": [
+        "مهندس Laravel",
+        "مطور ويب متكامل",
+        "معماري APIs وباك إند",
+        "DevOps وسحابة (AWS, Docker)"
+    ],
+    "hero_status": "متاح لمشاريع جديدة",
+    "stats": [
+        {
+            "value": 60,
+            "suffix": "+",
+            "label": "مشروع منجز"
+        },
+        {
+            "value": 5,
+            "suffix": "+",
+            "label": "سنوات خبرة"
+        },
+        {
+            "value": 1000,
+            "suffix": "+",
+            "label": "مستخدم نشط يوميًا"
+        },
+        {
+            "value": 30,
+            "suffix": "%",
+            "label": "تسليم أسرع عبر CI/CD"
+        }
+    ],
+    "resume_title": "الخبرات والتعليم",
+    "exp_title": "الخبرات",
+    "edu_title": "التعليم",
+    "courses_title": "الكورسات",
+    "tech_title": "التقنيات",
+    "no_results": "لا توجد مشاريع مطابقة لبحثك.",
+    "view": "عرض",
+    "code": "الكود",
+    "cta_title": "جاهز نبني حاجة عظيمة؟",
+    "cta_text": "أنا متاح لمشاريع جديدة واستشارات.",
+    "tech_labels": {
+        "backend": "الباك إند",
+        "databases": "قواعد البيانات",
+        "cloud_devops": "السحابة و DevOps",
+        "testing_monitoring": "الاختبار والمراقبة",
+        "frontend": "الواجهة الأمامية"
     }
 }

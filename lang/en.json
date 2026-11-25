@@ -376,5 +376,53 @@
                 "Tailwind"
             ]
         }
+    },
+    "nav_resume": "Experience",
+    "nav_blog": "Insights",
+    "hero_roles": [
+        "Laravel Engineer",
+        "Full-Stack Developer",
+        "API & Backend Architect",
+        "DevOps & Cloud (AWS, Docker)"
+    ],
+    "hero_status": "Available for new projects",
+    "stats": [
+        {
+            "value": 60,
+            "suffix": "+",
+            "label": "Projects delivered"
+        },
+        {
+            "value": 5,
+            "suffix": "+",
+            "label": "Years of experience"
+        },
+        {
+            "value": 1000,
+            "suffix": "+",
+            "label": "Daily active users served"
+        },
+        {
+            "value": 30,
+            "suffix": "%",
+            "label": "Faster delivery via CI/CD"
+        }
+    ],
+    "resume_title": "Experience & Education",
+    "exp_title": "Experience",
+    "edu_title": "Education",
+    "courses_title": "Courses",
+    "tech_title": "Tech stack",
+    "no_results": "No projects match your search.",
+    "view": "View",
+    "code": "Code",
+    "cta_title": "Ready to build something great?",
+    "cta_text": "I’m available for new projects and consultations.",
+    "tech_labels": {
+        "backend": "Backend",
+        "databases": "Databases",
+        "cloud_devops": "Cloud & DevOps",
+        "testing_monitoring": "Testing & Monitoring",
+        "frontend": "Frontend"
     }
 }
